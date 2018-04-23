@@ -1,9 +1,4 @@
 @charset "UTF-8";
-/* 
-* Name : Lightx
-* Version : 1.0.0 Beta
-* description : Css Micro Framework 
-* Author : Aouane Amine
 /*
 * This File contain all source files imported
 * You can Add more components in src folder and impotet here 
@@ -317,6 +312,40 @@ li {
 .text-left {
   text-align: left; }
 
+.text-info, .text-success, .text-warning, .text-error {
+  margin: 10px 0px;
+  padding: 12px; }
+
+.text-info {
+  color: #00529B;
+  background-color: #BDE5F8; }
+
+.text-success {
+  color: #4F8A10;
+  background-color: #DFF2BF; }
+
+.text-warning {
+  color: #9F6000;
+  background-color: #FEEFB3; }
+
+.text-error {
+  color: #D8000C;
+  background-color: #FFBABA; }
+
+.text-info i, .text-success i, .text-warning i, .text-error i {
+  margin: 10px 22px;
+  font-size: 2em;
+  vertical-align: middle; }
+
+.text-overline {
+  text-decoration: overline; }
+
+.text-linethrough {
+  text-decoration: line-through; }
+
+.text-underline {
+  text-decoration: underline; }
+
 button,
 .btn {
   margin-bottom: 1rem; }
@@ -347,7 +376,7 @@ img {
   margin-left: auto;
   margin-right: auto; }
 
-.container-fluid {
+.container.fluid {
   width: 100%;
   max-width: 1100px;
   margin: 0 auto; }
@@ -456,6 +485,137 @@ img {
   .container {
     width: 75%;
     max-width: 60rem; } }
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+  margin: 8px;
+  padding: 1rem; }
+  .col-1.frost, .col-2.frost, .col-3.frost, .col-4.frost, .col-5.frost, .col-6.frost, .col-7.frost, .col-8.frost, .col-9.frost, .col-10.frost, .col-11.frost, .col-12.frost {
+    background: #000428;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #004e92, #000428);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #004e92, #000428);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff; }
+  .col-1.mauve, .col-2.mauve, .col-3.mauve, .col-4.mauve, .col-5.mauve, .col-6.mauve, .col-7.mauve, .col-8.mauve, .col-9.mauve, .col-10.mauve, .col-11.mauve, .col-12.mauve {
+    background: #42275a;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #734b6d, #42275a);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #734b6d, #42275a);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff; }
+  .col-1.royal, .col-2.royal, .col-3.royal, .col-4.royal, .col-5.royal, .col-6.royal, .col-7.royal, .col-8.royal, .col-9.royal, .col-10.royal, .col-11.royal, .col-12.royal {
+    background: #141E30;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #243B55, #141E30);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #243B55, #141E30);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff; }
+  .col-1.dusk, .col-2.dusk, .col-3.dusk, .col-4.dusk, .col-5.dusk, .col-6.dusk, .col-7.dusk, .col-8.dusk, .col-9.dusk, .col-10.dusk, .col-11.dusk, .col-12.dusk {
+    background: #2C3E50;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FD746C, #2C3E50);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FD746C, #2C3E50);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff; }
+  .col-1.sea, .col-2.sea, .col-3.sea, .col-4.sea, .col-5.sea, .col-6.sea, .col-7.sea, .col-8.sea, .col-9.sea, .col-10.sea, .col-11.sea, .col-12.sea {
+    background: #2C3E50;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4CA1AF, #2C3E50);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4CA1AF, #2C3E50);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff; }
+  .col-1.fruit, .col-2.fruit, .col-3.fruit, .col-4.fruit, .col-5.fruit, .col-6.fruit, .col-7.fruit, .col-8.fruit, .col-9.fruit, .col-10.fruit, .col-11.fruit, .col-12.fruit {
+    background: #e96443;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #904e95, #e96443);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #904e95, #e96443);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff; }
+  .col-1.brd, .col-2.brd, .col-3.brd, .col-4.brd, .col-5.brd, .col-6.brd, .col-7.brd, .col-8.brd, .col-9.brd, .col-10.brd, .col-11.brd, .col-12.brd {
+    padding: 1em;
+    margin: 8px;
+    background: white;
+    border-radius: 3px;
+    border: 2px solid #000000;
+    color: #000000; }
+  .col-1.brd-turquoise, .col-2.brd-turquoise, .col-3.brd-turquoise, .col-4.brd-turquoise, .col-5.brd-turquoise, .col-6.brd-turquoise, .col-7.brd-turquoise, .col-8.brd-turquoise, .col-9.brd-turquoise, .col-10.brd-turquoise, .col-11.brd-turquoise, .col-12.brd-turquoise {
+    padding: 1em;
+    margin: 8px;
+    background: white;
+    border-radius: 3px;
+    border: 2px solid #1abc9c;
+    color: #000000; }
+  .col-1.brd-emerald, .col-2.brd-emerald, .col-3.brd-emerald, .col-4.brd-emerald, .col-5.brd-emerald, .col-6.brd-emerald, .col-7.brd-emerald, .col-8.brd-emerald, .col-9.brd-emerald, .col-10.brd-emerald, .col-11.brd-emerald, .col-12.brd-emerald {
+    padding: 1em;
+    margin: 8px;
+    background: white;
+    border-radius: 3px;
+    border: 2px solid #2ecc71;
+    color: #000000; }
+  .col-1.brd-rever, .col-2.brd-rever, .col-3.brd-rever, .col-4.brd-rever, .col-5.brd-rever, .col-6.brd-rever, .col-7.brd-rever, .col-8.brd-rever, .col-9.brd-rever, .col-10.brd-rever, .col-11.brd-rever, .col-12.brd-rever {
+    padding: 1em;
+    margin: 8px;
+    background: white;
+    border-radius: 3px;
+    border: 2px solid #3498db;
+    color: #000000; }
+  .col-1.brd-amethyst, .col-2.brd-amethyst, .col-3.brd-amethyst, .col-4.brd-amethyst, .col-5.brd-amethyst, .col-6.brd-amethyst, .col-7.brd-amethyst, .col-8.brd-amethyst, .col-9.brd-amethyst, .col-10.brd-amethyst, .col-11.brd-amethyst, .col-12.brd-amethyst {
+    padding: 1em;
+    margin: 8px;
+    background: white;
+    border-radius: 3px;
+    border: 2px solid #9b59b6;
+    color: #000000; }
+  .col-1.brd-asphalt, .col-2.brd-asphalt, .col-3.brd-asphalt, .col-4.brd-asphalt, .col-5.brd-asphalt, .col-6.brd-asphalt, .col-7.brd-asphalt, .col-8.brd-asphalt, .col-9.brd-asphalt, .col-10.brd-asphalt, .col-11.brd-asphalt, .col-12.brd-asphalt {
+    padding: 1em;
+    margin: 8px;
+    background: white;
+    border-radius: 3px;
+    border: 2px solid #34495e;
+    color: #000000; }
+  .col-1.brd-blue, .col-2.brd-blue, .col-3.brd-blue, .col-4.brd-blue, .col-5.brd-blue, .col-6.brd-blue, .col-7.brd-blue, .col-8.brd-blue, .col-9.brd-blue, .col-10.brd-blue, .col-11.brd-blue, .col-12.brd-blue {
+    padding: 1em;
+    margin: 8px;
+    background: white;
+    border-radius: 3px;
+    border: 2px solid #3D8EB9;
+    color: #000000; }
+  .col-1.brd-red, .col-2.brd-red, .col-3.brd-red, .col-4.brd-red, .col-5.brd-red, .col-6.brd-red, .col-7.brd-red, .col-8.brd-red, .col-9.brd-red, .col-10.brd-red, .col-11.brd-red, .col-12.brd-red {
+    padding: 1em;
+    margin: 8px;
+    background: white;
+    border-radius: 3px;
+    border: 2px solid #E3000E;
+    color: #000000; }
+  .col-1.brd-orange, .col-2.brd-orange, .col-3.brd-orange, .col-4.brd-orange, .col-5.brd-orange, .col-6.brd-orange, .col-7.brd-orange, .col-8.brd-orange, .col-9.brd-orange, .col-10.brd-orange, .col-11.brd-orange, .col-12.brd-orange {
+    padding: 1em;
+    margin: 8px;
+    background: white;
+    border-radius: 3px;
+    border: 2px solid #F29B34;
+    color: #000000; }
+  .col-1.text-turquoise, .col-2.text-turquoise, .col-3.text-turquoise, .col-4.text-turquoise, .col-5.text-turquoise, .col-6.text-turquoise, .col-7.text-turquoise, .col-8.text-turquoise, .col-9.text-turquoise, .col-10.text-turquoise, .col-11.text-turquoise, .col-12.text-turquoise {
+    color: #1abc9c; }
+  .col-1.text-emerald, .col-2.text-emerald, .col-3.text-emerald, .col-4.text-emerald, .col-5.text-emerald, .col-6.text-emerald, .col-7.text-emerald, .col-8.text-emerald, .col-9.text-emerald, .col-10.text-emerald, .col-11.text-emerald, .col-12.text-emerald {
+    color: #2ecc71; }
+  .col-1.text-rever, .col-2.text-rever, .col-3.text-rever, .col-4.text-rever, .col-5.text-rever, .col-6.text-rever, .col-7.text-rever, .col-8.text-rever, .col-9.text-rever, .col-10.text-rever, .col-11.text-rever, .col-12.text-rever {
+    color: #3498db; }
+  .col-1.text-amethyst, .col-2.text-amethyst, .col-3.text-amethyst, .col-4.text-amethyst, .col-5.text-amethyst, .col-6.text-amethyst, .col-7.text-amethyst, .col-8.text-amethyst, .col-9.text-amethyst, .col-10.text-amethyst, .col-11.text-amethyst, .col-12.text-amethyst {
+    color: #9b59b6; }
+  .col-1.text-asphalt, .col-2.text-asphalt, .col-3.text-asphalt, .col-4.text-asphalt, .col-5.text-asphalt, .col-6.text-asphalt, .col-7.text-asphalt, .col-8.text-asphalt, .col-9.text-asphalt, .col-10.text-asphalt, .col-11.text-asphalt, .col-12.text-asphalt {
+    color: #34495e; }
+  .col-1.text-blue, .col-2.text-blue, .col-3.text-blue, .col-4.text-blue, .col-5.text-blue, .col-6.text-blue, .col-7.text-blue, .col-8.text-blue, .col-9.text-blue, .col-10.text-blue, .col-11.text-blue, .col-12.text-blue {
+    color: #3D8EB9; }
+  .col-1.text-red, .col-2.text-red, .col-3.text-red, .col-4.text-red, .col-5.text-red, .col-6.text-red, .col-7.text-red, .col-8.text-red, .col-9.text-red, .col-10.text-red, .col-11.text-red, .col-12.text-red {
+    color: #E3000E; }
+  .col-1.text-orange, .col-2.text-orange, .col-3.text-orange, .col-4.text-orange, .col-5.text-orange, .col-6.text-orange, .col-7.text-orange, .col-8.text-orange, .col-9.text-orange, .col-10.text-orange, .col-11.text-orange, .col-12.text-orange {
+    color: #F29B34; }
+
 .btn {
   background-color: #95a5a6;
   /* Green */
@@ -783,5 +943,37 @@ ul.main-nav {
   .header {
     flex-direction: row;
     justify-content: space-between; } }
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 96%; }
+
+.card-content {
+  padding: 2px 16px; }
+
+.card img {
+  width: 100%; }
+
+.card.hover:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); }
+
+@media only screen and (min-width: 45em) {
+  /* 720px */
+  .card {
+    width: 37.66%; } }
+.progress {
+  width: 100%;
+  height: 20px; }
+
+.progress-wrap {
+  background: #f80;
+  margin: 20px 0;
+  overflow: hidden;
+  position: relative; }
+  .progress-wrap .progress-bar {
+    background: #ddd;
+    left: 0;
+    position: absolute;
+    top: 0; }
 
 /*# sourceMappingURL=lightx.css.map */
