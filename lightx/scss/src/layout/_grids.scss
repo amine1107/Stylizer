@@ -5,6 +5,12 @@
     margin-left: auto;
     margin-right: auto;
   }
+
+  .container.fluid {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
   
   .row {
     position: relative;
@@ -135,4 +141,164 @@
       max-width: 60rem;
     }
   }
+
+  // Colmun color
+
+  .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+    margin: 8px;
+    padding: 1rem;
+  &.frost {
+    background: #000428;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #004e92, #000428);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #004e92, #000428);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff;
+  }
+  &.mauve {
+    background: #42275a;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #734b6d, #42275a);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #734b6d, #42275a);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff;
+  }
+  &.royal {
+    background: #141E30;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #243B55, #141E30);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #243B55, #141E30);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff;
+  }
+  &.dusk {
+    background: #2C3E50;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FD746C, #2C3E50);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FD746C, #2C3E50);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff;
+  }
+  &.sea {
+    background: #2C3E50;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4CA1AF, #2C3E50);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4CA1AF, #2C3E50);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff;
+  }
+  &.fruit {
+    background: #e96443;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #904e95, #e96443);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #904e95, #e96443);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff;
+  }
+  &.brd {
+    // default border
+    padding: 1em;
+    margin: 8px;
+    background: white;
+    border-radius: 3px;
+    border: 2px solid #000000;
+    color: #000000;
+  }
+  &.brd-turquoise {
+    padding: 1em;
+    margin: 8px;
+    background: white;
+    border-radius: 3px;
+    border: 2px solid #1abc9c;
+    color: #000000;
+  }
+  &.brd-emerald {
+    padding: 1em;
+    margin: 8px;
+    background: white;
+    border-radius: 3px;
+    border: 2px solid #2ecc71;
+    color: #000000;
+  }
+  &.brd-rever {
+    padding: 1em;
+    margin: 8px;
+    background: white;
+    border-radius: 3px;
+    border: 2px solid #3498db;
+    color: #000000;
+  }
+  &.brd-amethyst {
+    padding: 1em;
+    margin: 8px;
+    background: white;
+    border-radius: 3px;
+    border: 2px solid #9b59b6;
+    color: #000000;
+  }
+  &.brd-asphalt {
+    padding: 1em;
+    margin: 8px;
+    background: white;
+    border-radius: 3px;
+    border: 2px solid #34495e;
+    color: #000000;
+  }
+  &.brd-blue {
+    padding: 1em;
+    margin: 8px;
+    background: white;
+    border-radius: 3px;
+    border: 2px solid #3D8EB9;
+    color: #000000;
+  }
+  &.brd-red {
+    padding: 1em;
+    margin: 8px;
+    background: white;
+    border-radius: 3px;
+    border: 2px solid #E3000E;
+    color: #000000;
+  }
+  &.brd-orange {
+    padding: 1em;
+    margin: 8px;
+    background: white;
+    border-radius: 3px;
+    border: 2px solid #F29B34;
+    color: #000000;
+  }
+  &.text-turquoise {
+    color: #1abc9c;
+  }
+  &.text-emerald {
+    color: #2ecc71;
+  }
+  &.text-rever {
+    color: #3498db;
+  }
+  &.text-amethyst {
+    color: #9b59b6;
+  }
+  &.text-asphalt {
+    color: #34495e;
+  }
+  &.text-blue {
+    color: #3D8EB9;
+  }
+  &.text-red {
+    color: #E3000E;
+  }
+  &.text-orange {
+    color: #F29B34;
+  }
+}
+
+
 
