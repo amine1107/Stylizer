@@ -1,31 +1,6 @@
-code,
-.code,
 pre {
-  background: #e0e0e0;
-  color: #0e0c0c;
-  font-size: 16px;
-  padding: 0;
-  padding: 10px;
-}
-code:before,
-.code:before,
-pre:before {
-  display: block;
-  width: calc(100%);
-  margin-left: -3px;
-  margin-top: -3px;
-  padding: 3px;
-  text-transform: uppercase;
-  content: attr(data-lang);
-  background: #c9c9c9;
-}
-code .o,
-.code .o,
-pre .o {
-  color: orange;
-}
-code .w,
-.code .w,
-pre .w {
-  color: white;
+  overflow: auto;
+  background-color: #ffffff;
+  border: 2px solid #898989;
+  padding: 5px;
 }
