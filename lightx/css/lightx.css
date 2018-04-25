@@ -536,6 +536,41 @@ img {
     background: linear-gradient(to right, #904e95, #e96443);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     color: #fff; }
+  .col-1.kachmir, .col-2.kachmir, .col-3.kachmir, .col-4.kachmir, .col-5.kachmir, .col-6.kachmir, .col-7.kachmir, .col-8.kachmir, .col-9.kachmir, .col-10.kachmir, .col-11.kachmir, .col-12.kachmir {
+    background: #614385;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #516395, #614385);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #516395, #614385);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
+  .col-1.steel-gray, .col-2.steel-gray, .col-3.steel-gray, .col-4.steel-gray, .col-5.steel-gray, .col-6.steel-gray, .col-7.steel-gray, .col-8.steel-gray, .col-9.steel-gray, .col-10.steel-gray, .col-11.steel-gray, .col-12.steel-gray {
+    background: #1F1C2C;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #928DAB, #1F1C2C);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #928DAB, #1F1C2C);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
+  .col-1.mirage, .col-2.mirage, .col-3.mirage, .col-4.mirage, .col-5.mirage, .col-6.mirage, .col-7.mirage, .col-8.mirage, .col-9.mirage, .col-10.mirage, .col-11.mirage, .col-12.mirage {
+    background: #16222A;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3A6073, #16222A);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3A6073, #16222A);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
+  .col-1.mojito, .col-2.mojito, .col-3.mojito, .col-4.mojito, .col-5.mojito, .col-6.mojito, .col-7.mojito, .col-8.mojito, .col-9.mojito, .col-10.mojito, .col-11.mojito, .col-12.mojito {
+    background: #1D976C;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #93F9B9, #1D976C);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #93F9B9, #1D976C);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
+  .col-1.cherry, .col-2.cherry, .col-3.cherry, .col-4.cherry, .col-5.cherry, .col-6.cherry, .col-7.cherry, .col-8.cherry, .col-9.cherry, .col-10.cherry, .col-11.cherry, .col-12.cherry {
+    background: #EB3349;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F45C43, #EB3349);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #F45C43, #EB3349);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
   .col-1.brd, .col-2.brd, .col-3.brd, .col-4.brd, .col-5.brd, .col-6.brd, .col-7.brd, .col-8.brd, .col-9.brd, .col-10.brd, .col-11.brd, .col-12.brd {
     padding: 1em;
     margin: 8px;
@@ -774,36 +809,11 @@ blockquote {
 @media screen and (min-width: 790px) {
   blockquote {
     width: 100%; } }
-code,
-.code,
 pre {
-  background: #e0e0e0;
-  color: #0e0c0c;
-  font-size: 16px;
-  padding: 0;
-  padding: 10px; }
-
-code:before,
-.code:before,
-pre:before {
-  display: block;
-  width: calc(100%);
-  margin-left: -3px;
-  margin-top: -3px;
-  padding: 3px;
-  text-transform: uppercase;
-  content: attr(data-lang);
-  background: #c9c9c9; }
-
-code .o,
-.code .o,
-pre .o {
-  color: orange; }
-
-code .w,
-.code .w,
-pre .w {
-  color: white; }
+  overflow: auto;
+  background-color: #ffffff;
+  border: 2px solid #898989;
+  padding: 5px; }
 
 /* Forms
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
