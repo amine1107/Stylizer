@@ -1,0 +1,77 @@
+/* =================
+      Navbar
+====================== */
+header {
+  padding: 0;
+}
+
+.navbar {
+  background: #e2e2e2;
+  .toggle, .brand {
+    display: inline-block;
+  }
+  .link {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 1em;
+    text-decoration: none;
+    background: #707271;
+    color: white;
+    &:hover,&:active {
+      background: black;
+    }
+  }
+  .brand {
+    width: 10em;
+    text-align: center;
+    padding: 1em;
+    background: black;
+    color: white;
+  }
+  .toggle {
+    padding: 1em;
+    color: black;
+    vertical-align: middle;
+  }
+}
+
+@media (min-width: 48em) {
+    .navbar {
+      display: flex;
+      .link-left,.link-right {
+        display: flex;
+        flex: 1;
+      }
+      .link {
+          width: auto;
+      }
+      .link-right {
+        justify-content: flex-end;
+      }
+      .toggle {
+        display: none;
+      }
+    }
+}
+
+.navbar {
+  div {
+    display: none;
+    @media (min-width: 48em) {
+      display: flex;
+    }
+  }
+}
+
+@media (max-width: 48em) {
+.navbar.active {
+  .toggle {
+    background: #707271;
+    color: white;
+  }
+  div {
+    display: block;
+  }
+}
+}

@@ -1,0 +1,36 @@
+/*
+* This File contain all source files imported
+* You can Add more components in src folder and impotet here 
+*/ 
+
+
+// Import Core 
+// ---------------------
+@import 'src/core/reset';
+@import 'src/core/base';
+@import 'src/core/variables';
+
+// Import utilities
+// -----------------------
+@import 'src/utilities/typo';
+@import 'src/utilities/list';
+@import 'src/utilities/helpers';
+@import 'src/utilities/spacing';
+@import 'src/utilities/image';
+
+
+
+//Import layout 
+// -------------------------
+@import 'src/layout/grids';
+
+//Import components 
+// -------------------------
+@import 'src/components/buttons';
+@import 'src/components/block';
+@import 'src/components/code';
+@import 'src/components/forms';
+@import 'src/components/table';
+@import 'src/components/navbar';
+@import 'src/components/cards';
+@import 'src/components/progressBar';
