@@ -60,7 +60,7 @@ Lighter contain 12 responsive grids
 </div>
 ```
 For more Informations visit : 
-* [Lightx Website](https://amine1107.github.io/lightx/)
+* [Lighter Website](https://amine1107.github.io/lighter/)
 
 # Contributing
 
