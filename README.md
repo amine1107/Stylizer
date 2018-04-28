@@ -10,7 +10,7 @@ Lighter is a flexible Css micro framework,Based on the visual aspect, the framew
 
 
 ## Version 
-version 1.0
+version 1.1.0
 ## Getting Started 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 ### Download the minified file
