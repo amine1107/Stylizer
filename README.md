@@ -1,3 +1,5 @@
+<div style="text-align:center"><img src ="https://amine1107.github.io/lighter/assets/img/logos.png" /></div>
+
 # Lighter
 Lighter is a flexible Css micro framework,Based on the visual aspect, the framework offers you a clean and easy work
 
