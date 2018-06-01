@@ -1,4 +1,12 @@
 @charset "UTF-8";
+/* ===================================================================
+
+ * Name : Lighter
+ * Description : Css Framework 
+ * Author : Aouane Mohamed Amine 
+ * Version : 1.1.1
+ 
+ * ===================================================================
 /*
 * This File contain all source files imported
 * You can Add more components in src folder and impotet here 
@@ -189,7 +197,7 @@ body {
   /* currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1.6;
   font-weight: 400;
-  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", Helvetica, sans-serif;
   color: #333333; }
 
 a {
@@ -214,7 +222,7 @@ hr {
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 2rem;
-  font-weight: 300; }
+  font-weight: 500; }
 
 h1 {
   font-size: 4.0rem;
@@ -265,7 +273,16 @@ h6 {
   h6 {
     font-size: 1.8rem; } }
 p {
-  margin-top: 0; }
+  margin: auto auto 1.5rem; }
+
+p + p {
+  margin-top: -1.5rem; }
+
+p.mode {
+  text-indent: 1.5rem; }
+
+small {
+  font-size: 65%; }
 
 /* Lists
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -495,79 +512,44 @@ img {
     border-radius: 3px;
     border: 1px solid #000000;
     color: #000000; }
-  .col-1.border-turquoise, .col-2.border-turquoise, .col-3.border-turquoise, .col-4.border-turquoise, .col-5.border-turquoise, .col-6.border-turquoise, .col-7.border-turquoise, .col-8.border-turquoise, .col-9.border-turquoise, .col-10.border-turquoise, .col-11.border-turquoise, .col-12.border-turquoise {
-    padding: 1em;
-    margin: 8px;
-    background: white;
-    border-radius: 3px;
-    border: 1px solid #1abc9c;
-    color: #000000; }
-  .col-1.border-emerald, .col-2.border-emerald, .col-3.border-emerald, .col-4.border-emerald, .col-5.border-emerald, .col-6.border-emerald, .col-7.border-emerald, .col-8.border-emerald, .col-9.border-emerald, .col-10.border-emerald, .col-11.border-emerald, .col-12.border-emerald {
-    padding: 1em;
-    margin: 8px;
-    background: white;
-    border-radius: 3px;
-    border: 1px solid #2ecc71;
-    color: #000000; }
-  .col-1.border-rever, .col-2.border-rever, .col-3.border-rever, .col-4.border-rever, .col-5.border-rever, .col-6.border-rever, .col-7.border-rever, .col-8.border-rever, .col-9.border-rever, .col-10.border-rever, .col-11.border-rever, .col-12.border-rever {
-    padding: 1em;
-    margin: 8px;
-    background: white;
-    border-radius: 3px;
-    border: 1px solid #3498db;
-    color: #000000; }
-  .col-1.border-amethyst, .col-2.border-amethyst, .col-3.border-amethyst, .col-4.border-amethyst, .col-5.border-amethyst, .col-6.border-amethyst, .col-7.border-amethyst, .col-8.border-amethyst, .col-9.border-amethyst, .col-10.border-amethyst, .col-11.border-amethyst, .col-12.border-amethyst {
-    padding: 1em;
-    margin: 8px;
-    background: white;
-    border-radius: 3px;
-    border: 1px solid #9b59b6;
-    color: #000000; }
-  .col-1.border-asphalt, .col-2.border-asphalt, .col-3.border-asphalt, .col-4.border-asphalt, .col-5.border-asphalt, .col-6.border-asphalt, .col-7.border-asphalt, .col-8.border-asphalt, .col-9.border-asphalt, .col-10.border-asphalt, .col-11.border-asphalt, .col-12.border-asphalt {
-    padding: 1em;
-    margin: 8px;
-    background: white;
-    border-radius: 3px;
-    border: 1px solid #34495e;
-    color: #000000; }
-  .col-1.border-blue, .col-2.border-blue, .col-3.border-blue, .col-4.border-blue, .col-5.border-blue, .col-6.border-blue, .col-7.border-blue, .col-8.border-blue, .col-9.border-blue, .col-10.border-blue, .col-11.border-blue, .col-12.border-blue {
-    padding: 1em;
-    margin: 8px;
-    background: white;
-    border-radius: 3px;
-    border: 1px solid #3D8EB9;
-    color: #000000; }
-  .col-1.border-red, .col-2.border-red, .col-3.border-red, .col-4.border-red, .col-5.border-red, .col-6.border-red, .col-7.border-red, .col-8.border-red, .col-9.border-red, .col-10.border-red, .col-11.border-red, .col-12.border-red {
-    padding: 1em;
-    margin: 8px;
-    background: white;
-    border-radius: 3px;
-    border: 1px solid #E3000E;
-    color: #000000; }
-  .col-1.border-orange, .col-2.border-orange, .col-3.border-orange, .col-4.border-orange, .col-5.border-orange, .col-6.border-orange, .col-7.border-orange, .col-8.border-orange, .col-9.border-orange, .col-10.border-orange, .col-11.border-orange, .col-12.border-orange {
-    padding: 1em;
-    margin: 8px;
-    background: white;
-    border-radius: 3px;
-    border: 1px solid #F29B34;
-    color: #000000; }
-  .col-1.text-turquoise, .col-2.text-turquoise, .col-3.text-turquoise, .col-4.text-turquoise, .col-5.text-turquoise, .col-6.text-turquoise, .col-7.text-turquoise, .col-8.text-turquoise, .col-9.text-turquoise, .col-10.text-turquoise, .col-11.text-turquoise, .col-12.text-turquoise {
-    color: #1abc9c; }
-  .col-1.text-emerald, .col-2.text-emerald, .col-3.text-emerald, .col-4.text-emerald, .col-5.text-emerald, .col-6.text-emerald, .col-7.text-emerald, .col-8.text-emerald, .col-9.text-emerald, .col-10.text-emerald, .col-11.text-emerald, .col-12.text-emerald {
-    color: #2ecc71; }
-  .col-1.text-rever, .col-2.text-rever, .col-3.text-rever, .col-4.text-rever, .col-5.text-rever, .col-6.text-rever, .col-7.text-rever, .col-8.text-rever, .col-9.text-rever, .col-10.text-rever, .col-11.text-rever, .col-12.text-rever {
-    color: #3498db; }
-  .col-1.text-amethyst, .col-2.text-amethyst, .col-3.text-amethyst, .col-4.text-amethyst, .col-5.text-amethyst, .col-6.text-amethyst, .col-7.text-amethyst, .col-8.text-amethyst, .col-9.text-amethyst, .col-10.text-amethyst, .col-11.text-amethyst, .col-12.text-amethyst {
-    color: #9b59b6; }
-  .col-1.text-asphalt, .col-2.text-asphalt, .col-3.text-asphalt, .col-4.text-asphalt, .col-5.text-asphalt, .col-6.text-asphalt, .col-7.text-asphalt, .col-8.text-asphalt, .col-9.text-asphalt, .col-10.text-asphalt, .col-11.text-asphalt, .col-12.text-asphalt {
-    color: #34495e; }
-  .col-1.text-blue, .col-2.text-blue, .col-3.text-blue, .col-4.text-blue, .col-5.text-blue, .col-6.text-blue, .col-7.text-blue, .col-8.text-blue, .col-9.text-blue, .col-10.text-blue, .col-11.text-blue, .col-12.text-blue {
-    color: #3D8EB9; }
-  .col-1.text-red, .col-2.text-red, .col-3.text-red, .col-4.text-red, .col-5.text-red, .col-6.text-red, .col-7.text-red, .col-8.text-red, .col-9.text-red, .col-10.text-red, .col-11.text-red, .col-12.text-red {
-    color: #E3000E; }
-  .col-1.text-orange, .col-2.text-orange, .col-3.text-orange, .col-4.text-orange, .col-5.text-orange, .col-6.text-orange, .col-7.text-orange, .col-8.text-orange, .col-9.text-orange, .col-10.text-orange, .col-11.text-orange, .col-12.text-orange {
-    color: #F29B34; }
 
+/**
+ * Tabs
+ */
+.tabs {
+  display: flex;
+  flex-wrap: wrap; }
+  .tabs label {
+    order: 1;
+    display: block;
+    padding: 1rem 2rem;
+    margin-right: 0.2rem;
+    cursor: pointer;
+    background: #dfe6e9;
+    font-weight: bold;
+    transition: background ease 0.5s; }
+  .tabs .tab {
+    order: 99;
+    flex-grow: 1;
+    width: 100%;
+    display: none;
+    padding: 1rem;
+    background: #fff; }
+  .tabs input[type="radio"] {
+    display: none; }
+    .tabs input[type="radio"]:checked + label {
+      background: #fff; }
+      .tabs input[type="radio"]:checked + label + .tab {
+        display: block; }
+
+@media (max-width: 45em) {
+  .tabs .tab {
+    order: initial; }
+  .tabs label {
+    order: initial;
+    width: 100%;
+    margin-right: 0;
+    margin-top: 0.2rem; } }
 /* =================
         Buttons
 ====================== */
@@ -701,38 +683,50 @@ button, .btn {
   /* Prevent double borders */
   background-color: #fff; }
 
+.btn-block {
+  width: 100%; }
+
 /* =================
       Blockquote
 ====================== */
 blockquote {
   background: #f9f9f9;
-  border-left: 10px solid #3714d3;
+  font-style: italic;
+  border: 1px solid #ecf0f1;
+  border-left: 10px solid #2980b9;
   margin: 1.5em 10px;
   padding: 0.5em 10px;
-  quotes: "“" "”" "‘" "’";
-  width: 100%; }
-  blockquote:before {
-    color: #ccc;
-    font-size: 4em;
-    line-height: 0.1em;
-    margin-right: 0.25em;
-    vertical-align: -0.4em; }
-  blockquote p {
-    display: inline;
-    width: 100%; }
+  quotes: "“" "”" "‘" "’"; }
 
-@media screen and (min-width: 790px) {
-  blockquote {
-    width: 100%; } }
+blockquote:before {
+  color: #2980b9;
+  content: "\201C";
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em; }
+
+blockquote p {
+  display: inline; }
+
 /* =================
          Code
 ====================== */
 pre {
   overflow: auto;
-  background-color: #ffffff;
-  border-left: 4px solid #281ccc;
+  white-space: pre-wrap;
+  background-color: #f9f9f9;
+  border: 1px solid #ecf0f1;
+  border-left: 4px solid #2980b9;
   border-right: 1px solid #898989;
-  padding: 5px; }
+  padding-left: 4px; }
+
+pre[data-lang]::before {
+  content: attr(data-lang);
+  background-color: #898989;
+  color: #ffffff;
+  padding-left: 4px;
+  display: block; }
 
 /* =================
       Forms
@@ -832,7 +826,8 @@ header {
   padding: 0; }
 
 .navbar {
-  background: #e2e2e2; }
+  background: #bdc3c7;
+  padding: 5px 5px 5px 5px; }
   .navbar .toggle, .navbar .brand {
     display: inline-block; }
   .navbar .link {
@@ -841,19 +836,20 @@ header {
     text-align: center;
     padding: 1em;
     text-decoration: none;
-    background: #707271;
+    background: #bdc3c7;
     color: white; }
     .navbar .link:hover, .navbar .link:active {
-      background: black; }
+      background: #95a5a6; }
   .navbar .brand {
     width: 10em;
     text-align: center;
     padding: 1em;
-    background: black;
+    background: #95a5a6;
+    font-weight: bold;
     color: white; }
   .navbar .toggle {
     padding: 1em;
-    color: black;
+    color: #ffffff;
     vertical-align: middle; }
 
 @media (min-width: 48em) {
@@ -883,101 +879,37 @@ header {
 /* =================
         Cards
 ====================== */
-.cards p {
-  margin-bottom: 1.5em; }
+.card-grid {
+  width: 100%; }
 
-.cards h2 {
-  font-size: 1.5em; }
+.card-grid:after {
+  content: "";
+  display: table;
+  clear: both; }
 
-.card img {
-  display: block;
-  border: 0;
+.card-wrap {
+  float: left;
   width: 100%;
-  height: auto; }
+  padding: 5px; }
 
-/* Flexbox */
-@media screen and (min-width: 50em) {
-  .outer-wrap {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column; }
-
-  .content {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex; }
-
-  .main-area {
-    -webkit-flex: 1 1 auto;
-    -ms-flex: 1 1 auto;
-    flex: 1 1 auto;
-    -webkit-order: 1;
-    -ms-flex-order: 1;
-    order: 1; } }
-/* Card Based Layout - Base styles */
+@media (min-width: 500px) {
+  .card-wrap {
+    width: 100%; } }
 .card {
-  background: white;
-  margin-bottom: 2em; }
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  border-bottom: 2px solid #ccc; }
 
-.card a {
-  color: black;
-  text-decoration: none; }
+.card > div {
+  padding: 0 1em; }
 
-.card a:hover {
-  box-shadow: 3px 3px 8px #b3b3b3;
-  transition: all 0.4s; }
+.card-video {
+  width: 100%; }
 
-.card-content {
-  padding: 1.4em; }
+.card-img {
+  width: 100%; }
 
-.card-content h2 {
-  margin-top: 0;
-  margin-bottom: .5em;
-  font-weight: normal; }
-
-.card-content p {
-  font-size: 95%; }
-
-/* Flexbox stuff */
-@media screen and (min-width: 40em) {
-  .cards {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-justify-content: space-between;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    margin-top: -1em; }
-
-  .card {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex: 0 1 calc(50% - .5em);
-    -ms-flex: 0 1 calc(50% - .5em);
-    flex: 0 1 calc(50% - .5em);
-    margin-bottom: 1em; } }
-@media screen and (max-width: 39.9em) {
-  .main-area {
-    padding: 0em; }
-
-  .card {
-    margin-bottom: 0em; } }
-@media screen and (min-width: 60em) {
-  .cards {
-    margin-top: inherit; }
-
-  .card {
-    -webkit-flex: 0 1 calc(33% - 1em);
-    -ms-flex: 0 1 calc(33% - 1em);
-    flex: 0 1 calc(33% - 1em);
-    margin-bottom: 2em; } }
 .progress {
   width: 100%;
   background-color: #ddd; }

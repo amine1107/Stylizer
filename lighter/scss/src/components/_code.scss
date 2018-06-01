@@ -3,8 +3,18 @@
 ====================== */
 pre {
   overflow: auto;
-  background-color: #ffffff;
-  border-left: 4px solid #281ccc;
+  white-space: pre-wrap;
+  background-color: #f9f9f9;
+  border: 1px solid #ecf0f1;
+  border-left: 4px solid #2980b9;
   border-right: 1px solid #898989;
-  padding: 5px;
+  padding-left: 4px;
+}
+
+pre[data-lang]::before {
+  content: attr(data-lang);
+  background-color: #898989;
+  color: #ffffff;
+  padding-left: 4px;
+  display: block;
 }

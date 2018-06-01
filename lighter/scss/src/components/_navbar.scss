@@ -6,7 +6,8 @@ header {
 }
 
 .navbar {
-  background: #e2e2e2;
+  background: #bdc3c7;
+  padding: 5px 5px 5px 5px;
   .toggle, .brand {
     display: inline-block;
   }
@@ -16,22 +17,23 @@ header {
     text-align: center;
     padding: 1em;
     text-decoration: none;
-    background: #707271;
+    background: #bdc3c7;
     color: white;
     &:hover,&:active {
-      background: black;
+      background: #95a5a6;
     }
   }
   .brand {
     width: 10em;
     text-align: center;
     padding: 1em;
-    background: black;
+    background: #95a5a6;
+    font-weight: bold;
     color: white;
   }
   .toggle {
     padding: 1em;
-    color: black;
+    color: #ffffff;
     vertical-align: middle;
   }
 }
