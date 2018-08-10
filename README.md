@@ -1,7 +1,5 @@
 <div  align="center">
 <img src ="https://amine1107.github.io/lighter/assets/img/logos.png" />
-</div>
-
 # Lighter
 Lighter is a flexible Css micro framework,Based on the visual aspect, the framework offers you a clean and easy work
 
@@ -10,11 +8,10 @@ Lighter is a flexible Css micro framework,Based on the visual aspect, the framew
 [![GitHub stars](https://img.shields.io/github/stars/amine1107/lighter.svg?style=flat-square)](https://github.com/amine1107/lighter/stargazers)
 [![GitHub license](https://img.shields.io/github/license/amine1107/lighter.svg?style=flat-square)](https://github.com/amine1107/lighter/blob/master/LICENSE)
 
-
-
-
 ## Version 
 version 1.1.1
+</div>
+
 ## Getting Started 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 ### Download the minified file
