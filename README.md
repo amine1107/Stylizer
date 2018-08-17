@@ -2,7 +2,7 @@
 <img src ="https://amine1107.github.io/lighter/assets/img/logos.png" />
   
   
-# Lighter V1.1
+# Lighter V2.0
 Lighter is a flexible Css micro framework,Based on the visual aspect, the framework offers you a clean and easy work
 
 [![GitHub issues](https://img.shields.io/github/issues/amine1107/lighter.svg)](https://github.com/amine1107/lightx/issues)
