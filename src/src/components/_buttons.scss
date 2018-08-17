@@ -9,7 +9,8 @@ button,.btn {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 15px;
+    font-size: 13px;
+    font-weight: 400;
     margin: 2px 2px;
     cursor: pointer;
     &.right {
@@ -159,15 +160,14 @@ button,.btn {
     content: "";
     clear: both;
     display: table;
-    background-color : #ffffff;
+    background-color : transparent;
     margin: none;
     padding: 0;
-  
   }
   
   .btn-group button,input:not(:last-child) {
       border-right: none; /* Prevent double borders */
-      background-color: #fff;
+      background-color: transparent;
   }
 
   .btn-block {
