@@ -3,7 +3,8 @@
   @import 'variables';
 
   *, *::after, *::before {
-    box-sizing: border-box; }
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
 
   html {
     font-size: $font-size; }
@@ -19,9 +20,11 @@
 a {
   -webkit-backface-visibility:hidden;
   backface-visibility:hidden;
-	position:relative;
+  position:relative;
+  -webkit-transition:0.5s color ease;
+  -o-transition:0.5s color ease;
   transition:0.5s color ease;
-	text-decoration:none;
+  text-decoration:none;
   color: $link-color;
   text-decoration: none;
   &:hover {
