@@ -1,6 +1,6 @@
 {
   "name": "lighter.css",
-  "version": "1.1.0",
+  "version": "2.0.0",
   "description": "flexible Css micro framework based on the visual aspect, the framework offers you a clean and easy work.",
   "main": "index.js",
   "scripts": {
