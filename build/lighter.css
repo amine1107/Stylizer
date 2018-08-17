@@ -4,7 +4,7 @@
  * Name : Lighter
  * Description : Css Framework 
  * Author : Aouane Mohamed Amine 
- * Version : 1.1.1
+ * Version : 2.0
  
  * ===================================================================
 /*
@@ -98,8 +98,8 @@ figure {
   margin: 1em 40px; }
 
 hr {
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
   height: 0; }
 
 pre {
@@ -148,13 +148,13 @@ input {
     -webkit-appearance: button;
     cursor: pointer; }
   input[type="checkbox"], input[type="radio"] {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     padding: 0; }
   input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
     height: auto; }
   input[type="search"] {
     -webkit-appearance: textfield;
-    -moz-box-sizing: content-box;
     -webkit-box-sizing: content-box;
     box-sizing: content-box; }
     input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
@@ -187,7 +187,8 @@ th {
 /* ----------------------- */
 /* Variables */
 *, *::after, *::before {
-  box-sizing: border-box; }
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
 
 html {
   font-size: 62.5%; }
@@ -204,6 +205,8 @@ a {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   position: relative;
+  -webkit-transition: 0.5s color ease;
+  -o-transition: 0.5s color ease;
   transition: 0.5s color ease;
   text-decoration: none;
   color: #137391;
@@ -308,11 +311,13 @@ li {
 
 .full-width {
   width: 100%;
-  box-sizing: border-box; }
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
 
 .max-full-width {
   max-width: 100%;
-  box-sizing: border-box; }
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
 
 .float-right {
   float: right; }
@@ -517,20 +522,31 @@ img {
  * Tabs
  */
 .tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap; }
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
   .tabs label {
-    order: 1;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
     display: block;
     padding: 1rem 2rem;
     margin-right: 0.2rem;
     cursor: pointer;
     background: #dfe6e9;
     font-weight: bold;
+    -webkit-transition: background ease 0.5s;
+    -o-transition: background ease 0.5s;
     transition: background ease 0.5s; }
   .tabs .tab {
-    order: 99;
-    flex-grow: 1;
+    -webkit-box-ordinal-group: 100;
+        -ms-flex-order: 99;
+            order: 99;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
     width: 100%;
     display: none;
     padding: 1rem;
@@ -544,9 +560,13 @@ img {
 
 @media (max-width: 45em) {
   .tabs .tab {
-    order: initial; }
+    -webkit-box-ordinal-group: initial;
+        -ms-flex-order: initial;
+            order: initial; }
   .tabs label {
-    order: initial;
+    -webkit-box-ordinal-group: initial;
+        -ms-flex-order: initial;
+            order: initial;
     width: 100%;
     margin-right: 0;
     margin-top: 0.2rem; } }
@@ -746,8 +766,10 @@ select {
   background-color: #fff;
   border: 1px solid #D1D1D1;
   border-radius: 4px;
-  box-shadow: none;
-  box-sizing: border-box;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   width: 100%; }
 
 /* Removes awkward default styles on some inputs for iOS */
@@ -801,7 +823,9 @@ label > .label-body {
 
 form button,
 input[type="submit"] {
-  align-items: left; }
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left; }
 
 /* Tables
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -854,20 +878,30 @@ header {
 
 @media (min-width: 48em) {
   .navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex; }
     .navbar .link-left, .navbar .link-right {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      flex: 1; }
+      -webkit-box-flex: 1;
+          -ms-flex: 1;
+              flex: 1; }
     .navbar .link {
       width: auto; }
     .navbar .link-right {
-      justify-content: flex-end; }
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end; }
     .navbar .toggle {
       display: none; } }
 .navbar div {
   display: none; }
   @media (min-width: 48em) {
     .navbar div {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex; } }
 
 @media (max-width: 48em) {
@@ -918,5 +952,3 @@ header {
   width: 10%;
   height: 10px;
   background-color: #352ad1; }
-
-/*# sourceMappingURL=lighter.css.map */
