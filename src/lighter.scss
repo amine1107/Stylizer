@@ -10,10 +10,6 @@
 @import 'src/core/base';
 @import 'src/core/variables';
 
-//Import Mixins
-// -------------------------
-@import 'src/mixins/responsive';
-
 // Import utilities
 // -----------------------
 @import 'src/utilities/typo';
@@ -21,6 +17,8 @@
 @import 'src/utilities/helpers';
 @import 'src/utilities/spacing';
 @import 'src/utilities/image';
+
+
 
 //Import layout 
 // -------------------------

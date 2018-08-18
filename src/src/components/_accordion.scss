@@ -3,16 +3,11 @@
  */
 
 .tabs {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   // make sure it wraps
   label {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
+    order: 1;
     // Put the labels first
     display: block;
     padding: 1rem 2rem;
@@ -20,14 +15,10 @@
     cursor: pointer;
     background: #dfe6e9;
     font-weight: bold;
-    -webkit-transition: background ease 0.5s;
-    -o-transition: background ease 0.5s;
     transition: background ease 0.5s;
   }
   .tab {
-    -webkit-box-ordinal-group: 100;
-        -ms-flex-order: 99;
-            order: 99;
+    order: 99;
     // Put the tabs last
     flex-grow: 1;
     width: 100%;
@@ -49,14 +40,10 @@
 @media (max-width: 45em) {
   .tabs {
     .tab {
-      -webkit-box-ordinal-group: initial;
-          -ms-flex-order: initial;
-              order: initial;
+      order: initial;
     }
     label {
-      -webkit-box-ordinal-group: initial;
-          -ms-flex-order: initial;
-              order: initial;
+      order: initial;
       width: 100%;
       margin-right: 0;
       margin-top: 0.2rem;

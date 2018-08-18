@@ -15,10 +15,8 @@ select {
   background-color: #fff;
   border: 1px solid #D1D1D1;
   border-radius: 4px;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box; 
+  box-shadow: none;
+  box-sizing: border-box; 
   width: 100%;
 }
 /* Removes awkward default styles on some inputs for iOS */
@@ -65,7 +63,5 @@ label > .label-body {
   font-weight: normal; }
 form button,
 input[type="submit"] {
-   -webkit-box-align: left;
-       -ms-flex-align: left;
-           align-items: left;
+   align-items: left;
 }

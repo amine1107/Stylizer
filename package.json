@@ -1,26 +1,50 @@
 {
-  "name": "lighter.css",
-  "version": "2.0.0",
-  "description": "flexible Css micro framework based on the visual aspect, the framework offers you a clean and easy work.",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "./node_modules/.bin/node-sass src/lighter.scss build/lighter.css && ./node_modules/.bin/node-sass src/lighter.scss build/lighter.min.css --output-style compressed"
+  "_from": "lighter.css",
+  "_id": "lighter.css@2.0.0",
+  "_inBundle": false,
+  "_integrity": "sha512-MrBBiw2q0q7GzoVyAL8JAcu9HmLJz/F7oRuU//KnWsRrgZ2IOqGlMwXVvopvfXjLG+ECPjMYS7f2kk0Y0uWaiA==",
+  "_location": "/lighter.css",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "lighter.css",
+    "name": "lighter.css",
+    "escapedName": "lighter.css",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
   },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/lighter.css/-/lighter.css-2.0.0.tgz",
+  "_shasum": "e29c5b62074a6ce9d858322d4b83aad1c5f6e735",
+  "_spec": "lighter.css",
+  "_where": "C:\\Users\\sqid\\Desktop\\lib",
+  "author": {
+    "name": "Aouane Amine"
+  },
+  "bugs": {
+    "url": "https://github.com/amine1107/lighter/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "flexible Css micro framework based on the visual aspect, the framework offers you a clean and easy work.",
+  "homepage": "https://github.com/amine1107/lighter#readme",
+  "keywords": [
+    "\"css\"\"framework\""
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "lighter.css",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/amine1107/lighter.git"
   },
-  "keywords": [
-    "\"css\"\"framework\""
-  ],
-  "author": "Aouane Amine",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/amine1107/lighter/issues"
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "homepage": "https://github.com/amine1107/lighter#readme",
-  "dependencies": {
-    "node-sass": "^4.9.3"
-  }
+  "version": "2.0.0"
 }
