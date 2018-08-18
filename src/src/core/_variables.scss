@@ -19,3 +19,15 @@ $font-family:          -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ub
 $font-size:           62.5%;
 $bold:                bold;
 
+// Breakpoints
+$breakpoints: (
+  xl: (min: 1200px),
+  lg: (min: 992px, max: 1199px), 
+  md: (min: 768px, max: 992px),
+  sm: (min: 576px, max: 767px),
+  xs: (max: 576px)
+);
+
+// Grid Cols
+$cols-number: 12;
+$cols-gap: 15px;

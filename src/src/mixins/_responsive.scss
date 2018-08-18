@@ -1,0 +1,21 @@
+// apply a style to a specific screen size
+@mixin media-apply($breakpoint) { 
+  @if map-has-key($breakpoints, $breakpoint) {
+    $point: map-get($breakpoints, $breakpoint);
+    @media (min-width: #{map-get($point, 'min') or 0}) 
+    and (max-width: #{map-get($point, 'max') or 5000px}){
+      @content;
+    }
+  }
+}
+
+// map a style to all screen sizes
+@mixin responsive($pre, $post: null) {
+  @each $device, $size in $breakpoints {
+    .#{$pre}-#{$device}#{if($post, -#{$post}, '')} {
+      @include media-apply($device) {
+        @content;
+      }
+    }
+  }
+}
