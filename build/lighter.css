@@ -1,12 +1,4 @@
 @charset "UTF-8";
-/* ===================================================================
-
- * Name : Lighter
- * Description : Css Framework 
- * Author : Aouane Mohamed Amine 
- * Version : 1.1.1
- 
- * ===================================================================
 /*
 * This File contain all source files imported
 * You can Add more components in src folder and impotet here 
@@ -274,6 +266,9 @@ h6 {
     font-size: 1.8rem; } }
 p {
   margin: auto auto 1.5rem; }
+
+p {
+  font-weight: 400; }
 
 p + p {
   margin-top: -1.5rem; }
@@ -561,7 +556,8 @@ button, .btn {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 15px;
+  font-size: 13px;
+  font-weight: 400;
   margin: 2px 2px;
   cursor: pointer; }
   button.right, .btn.right {
@@ -670,21 +666,124 @@ button, .btn {
     opacity: 0.65;
     cursor: not-allowed; }
 
-.btn-groupe {
+.btn-group {
   content: "";
   clear: both;
-  display: table;
-  background-color: #ffffff;
+  display: inline;
+  background-color: transparent;
   margin: none;
+  white-space: nowrap;
   padding: 0; }
 
 .btn-group button, input:not(:last-child) {
   border-right: none;
   /* Prevent double borders */
-  background-color: #fff; }
+  background-color: transparent; }
 
 .btn-block {
   width: 100%; }
+
+.tags {
+  list-style: none;
+  margin: 0;
+  overflow: hidden;
+  padding: 0; }
+  .tags li {
+    float: left; }
+
+.tag {
+  background: #eee;
+  border-radius: 3px 0 0 3px;
+  color: #999;
+  display: inline-block;
+  height: 26px;
+  line-height: 26px;
+  padding: 0 20px 0 23px;
+  position: relative;
+  margin: 0 10px 10px 0;
+  text-decoration: none;
+  -webkit-transition: color 0.2s; }
+  .tag::before {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: inset 0 1px rgba(0, 0, 0, 0.25);
+    content: '';
+    height: 6px;
+    left: 10px;
+    position: absolute;
+    width: 6px;
+    top: 10px; }
+  .tag::after {
+    background: #fff;
+    border-bottom: 13px solid transparent;
+    border-left: 10px solid #eee;
+    border-top: 13px solid transparent;
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0; }
+  .tag:hover {
+    background-color: #95a5a6;
+    color: white; }
+    .tag:hover::after {
+      border-left-color: #95a5a6; }
+
+.badge {
+  box-sizing: border-box;
+  display: inline-block;
+  background-color: #bdc3c7;
+  color: #ffffff;
+  border-radius: 3rem;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 400;
+  padding: .05rem .8rem .1rem;
+  line-height: inherit; }
+
+.badge-line {
+  background-color: transparent;
+  color: #95a5a6;
+  box-shadow: 0 0 0 1px #95a5a6; }
+
+.badge-info {
+  background-color: #3498db; }
+
+.badge-warning {
+  background-color: #f1c40f; }
+
+.badge-danger {
+  background-color: #e74c3c; }
+
+.badge-success {
+  background-color: #27ae60; }
+
+.badge-small {
+  font-size: 1.2rem;
+  padding: .1rem .65rem .2rem; }
+
+.badge-smaller {
+  font-size: .7rem;
+  padding: .05rem .4rem .15rem; }
+
+.btn[data-badge-count]::after {
+  content: attr(data-badge-count);
+  background: #FF5D5D;
+  color: white;
+  font-size: 9px;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  padding: 3px 6px;
+  border-radius: 15px; }
+
+.btn__badge--blue, .btn:nth-child(2n)::after {
+  background: #33B6E6; }
+
+.btn__badge--green, .btn:nth-child(3n)::after {
+  background: #6fd162; }
+
+.btn__badge--purple, .btn:nth-child(4n)::after {
+  background: #b262d1; }
 
 /* =================
       Blockquote

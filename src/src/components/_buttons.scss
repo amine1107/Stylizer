@@ -156,12 +156,13 @@ button,.btn {
   }
   
   
-  .btn-groupe {
+  .btn-group {
     content: "";
     clear: both;
-    display: table;
+    display: inline;
     background-color : transparent;
     margin: none;
+    white-space: nowrap;
     padding: 0;
   }
   

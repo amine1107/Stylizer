@@ -1,0 +1,83 @@
+$badge-text-color: #ffffff;
+$badge-default-bg: #bdc3c7;
+$badge-info-bg: #3498db;
+$badge-warning-bg: #f1c40f;
+$badge-danger-bg: #e74c3c;
+$badge-success-bg: #27ae60;
+
+// Basiz setup
+.badge {
+    box-sizing: border-box;
+    display: inline-block;
+    background-color: $badge-default-bg;
+    color: $badge-text-color;
+    
+    border-radius: 3rem; // As longe as this is bigger than the fontsize
+    text-align: center;
+
+    font-size: 1.6rem;
+    font-weight: 400;
+    padding: .05rem .8rem .1rem;
+    line-height: inherit;
+}
+
+// Style
+.badge-line {
+    background-color: transparent;
+    color: #95a5a6;
+    box-shadow: 0 0 0 1px #95a5a6;
+}
+
+.badge-info {
+    background-color: $badge-info-bg;
+}
+
+.badge-warning {
+    background-color: $badge-warning-bg;
+}
+
+.badge-danger {
+    background-color: $badge-danger-bg;
+}
+
+.badge-success {
+    background-color: $badge-success-bg;
+}
+
+// Sizes
+.badge-small {
+    font-size: 1.2rem;
+    padding: .1rem .65rem .2rem;
+}
+
+.badge-smaller {
+    font-size: .7rem;
+    padding: .05rem .4rem .15rem;
+}
+
+// button badges 
+.btn[data-badge-count]::after {
+  content: attr(data-badge-count);
+  background: #FF5D5D;
+  color: white;
+  font-size: 9px;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  padding: 3px 6px;
+  border-radius: 15px;
+}
+
+.btn__badge--blue, .btn:nth-child(2n)::after {
+  background: #33B6E6;
+}
+
+.btn__badge--green, .btn:nth-child(3n)::after {
+  background: #6fd162;
+}
+
+.btn__badge--purple, .btn:nth-child(4n)::after {
+  background: #b262d1;
+}
+
+

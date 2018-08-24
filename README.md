@@ -32,7 +32,7 @@ $ git clone https://github.com/amine1107/lighter.git
 $ npm i lighter.css
 ```
 ## Running the tests
-You can simply add Lighter to your file Html
+You can simply add Lightx to your file Html
 ```html
 <!DOCTYPE html>
 <html>
