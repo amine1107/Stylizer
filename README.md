@@ -53,7 +53,7 @@ You can simply add Lightx to your file Html
 </body>
 </html>  
 ```
-## Exemple
+## Example
 ### Grids
 Lighter contain 12 responsive grids 
 ```html 
