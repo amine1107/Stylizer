@@ -1,28 +1,5 @@
 {
-  "_from": "lighter.css",
-  "_id": "lighter.css@2.0.0",
-  "_inBundle": false,
-  "_integrity": "sha512-MrBBiw2q0q7GzoVyAL8JAcu9HmLJz/F7oRuU//KnWsRrgZ2IOqGlMwXVvopvfXjLG+ECPjMYS7f2kk0Y0uWaiA==",
-  "_location": "/lighter.css",
-  "_phantomChildren": {},
-  "_requested": {
-    "type": "tag",
-    "registry": true,
-    "raw": "lighter.css",
-    "name": "lighter.css",
-    "escapedName": "lighter.css",
-    "rawSpec": "",
-    "saveSpec": null,
-    "fetchSpec": "latest"
-  },
-  "_requiredBy": [
-    "#USER",
-    "/"
-  ],
-  "_resolved": "https://registry.npmjs.org/lighter.css/-/lighter.css-2.0.0.tgz",
-  "_shasum": "e29c5b62074a6ce9d858322d4b83aad1c5f6e735",
-  "_spec": "lighter.css",
-  "_where": "C:\\Users\\sqid\\Desktop\\lib",
+  "name": "lighter.css",
   "author": {
     "name": "Aouane Amine"
   },
@@ -37,8 +14,8 @@
     "\"css\"\"framework\""
   ],
   "license": "MIT",
-  "main": "index.js",
-  "name": "lighter.css",
+  "main": "build/lighter.css",
+
   "repository": {
     "type": "git",
     "url": "git+https://github.com/amine1107/lighter.git"
