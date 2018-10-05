@@ -1,16 +1,57 @@
 // Grids 
 // -------------------
+
+/* A wilder container. The old one was too small */ 
+
 .container {
-    width: 90%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
-  .container.fluid {
-    width: 100%;
-    max-width: 1100px;
-    margin: 0 auto;
+/* Responsive container in all devices sizes */ 
+
+// Small Screen
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
   }
+}
+
+// Medium Screen
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+// Large Screen
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+// Extra Large Screen
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+/* Added some padding left & right on the container fluid for a better design.
+I also set the width to 100% and deleted the max-width 1100px so the users that
+have a large screen can have a better UI */
+
+.container.fluid {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 18px;
+    padding-right: 18px;
+ }
   
   .row {
     position: relative;
