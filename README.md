@@ -5,7 +5,7 @@
 # Stylizer V3.0
 Stylizer is a flexible Css framework,Based on the visual aspect, the framework offers you a clean and easy work
 
-[![GitHub issues](https://img.shields.io/github/issues/amine1107/Stylizer.svg)](https://github.com/amine1107/lightx/issues)
+[![GitHub issues](https://github.com/amine1107/getstylizer/blob/gh-pages/img/show.png)](https://github.com/amine1107/lightx/issues)
 [![GitHub forks](https://img.shields.io/github/forks/amine1107/Stylizer.svg?style=flat-square)](https://github.com/amine1107/lightx/network)
 [![GitHub stars](https://img.shields.io/github/stars/amine1107/Stylizer.svg?style=flat-square)](https://github.com/amine1107/Stylizer/stargazers)
 [![GitHub license](https://img.shields.io/github/license/amine1107/Stylizer.svg?style=flat-square)](https://github.com/amine1107/Stylizer/blob/master/LICENSE)
