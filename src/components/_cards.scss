@@ -1,0 +1,38 @@
+// ---------------------------------------------------------------
+// This file contains all styles related to the card component.
+// ---------------------------------------------------------------
+
+.card-grid {
+  width: 100%;
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+.card-wrap {
+  float: left;
+  width: 100%;
+  padding: 5px;
+}
+
+@media (min-width: 500px) {
+  .card-wrap {
+    width: 100%;
+  }
+}
+
+.card {
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  border-bottom: 2px solid #ccc;
+  > div {
+    padding: 0 1em;
+  }
+}
+
+.card-video, .card-img {
+  width: 100%;
+}

@@ -1,0 +1,63 @@
+// ---------------------------------------------------------------
+// This file contains all styles related to the accordion component.
+// ---------------------------------------------------------------
+
+/**
+ * Setup the tabs class with flex
+ */
+
+ .tabs {
+  display: flex;
+  flex-wrap: wrap;
+
+  -webkit-box-shadow: 0px 3px 12px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 3px 12px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 3px 12px 0px rgba(0,0,0,0.75);
+  // make sure it wraps
+  label {
+    order: 1;
+    // Put the labels first
+    display: block;
+    padding: 1rem 2rem;
+    margin-right: 0.2rem;
+    cursor: pointer;
+    background: #dfe6e9;
+    transition: background ease 0.5s;
+  }
+  .tab {
+    order: 99;
+    // Put the tabs last
+    flex-grow: 1;
+    width: 100%;
+    display: none;
+    padding: 1rem;
+    background: #fff;
+  }
+  input[type="radio"] {
+    display: none;
+    &:checked + label {
+      background: #fff;
+      + .tab {
+        display: block;
+      }
+    }
+  }
+}
+
+/*
+** For responsive accordion
+*/
+
+@media (max-width: 45em) {
+  .tabs {
+    .tab {
+      order: initial;
+    }
+    label {
+      order: initial;
+      width: 100%;
+      margin-right: 0;
+      margin-top: 0.2rem;
+    }
+  }
+}

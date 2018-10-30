@@ -1,0 +1,42 @@
+// ---------------------------------------------------------------
+// This file contains all styles related to the Blockquotes component.
+// ---------------------------------------------------------------
+
+ blockquote {
+            width: 100%;
+            max-width:1170px;
+            margin: 30px auto;
+            box-sizing: border-box;
+            padding: 10px 10px 10px 50px;
+            border-left:4px solid #2c3e50;
+            box-shadow: -1px 2px 0px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: -1px 2px 0px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: -1px 2px 0px 0px rgba(0,0,0,0.75);
+            position: relative;
+            color: #2c3e50;
+            line-height: 1.3em;
+            text-align: justify;
+            font-family: "Georgia";
+        }
+        
+        blockquote:before {
+            content: "\201C";
+            font-size: 30px;
+            position: absolute;
+            font-size: 60px;
+            font-weight: bold;
+            color: #757575;
+            left:10px;
+            top:26px;
+        }
+        
+        #link {
+            background-color: beige;
+            text-decoration: none;
+            padding: 2px 3px;
+            color: #13705f;
+        }
+
+#link:hover {
+  color:black;
+}

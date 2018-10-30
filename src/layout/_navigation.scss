@@ -1,0 +1,568 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the Navigation of the site/application.
+// -----------------------------------------------------------------------------
+// Import Global Variables 
+@import '../abstracts/variables';
+/*
+** Global Variables
+*/ 
+$sty-height: 58px !default;
+$sty-breakpoint: 768px !default;
+$sty-padding: 18px 24px 18px 24px !default;
+$sty-transition: .6s ease !default;
+$hamburger-line-height: 2px !default;
+$hamburger-width: 26px !default;
+$sty-shadow: 0 1px 3px rgba(#000, .12), 0 1px 2px rgba(#000, .24) !default;
+$sty-css-prefix: 'sty' !default;
+
+
+/* 
+** Modes
+*/ 
+.#{$sty-css-prefix}-default {
+    width: 100%;
+    position: relative;
+    box-shadow: $sty-shadow;
+    z-index: 1000;
+}
+
+.#{$sty-css-prefix}-static {
+    box-shadow: $sty-shadow;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+
+    .#{$sty-css-prefix}-checkbox {
+        &:checked ~.#{$sty-css-prefix}-menu {
+            position: absolute;
+        }
+    }
+}
+
+.#{$sty-css-prefix}-fixed {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: $sty-shadow;
+}
+
+.#{$sty-css-prefix}-fixed-bottom {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: $sty-shadow;
+}
+
+/*
+** For Mobile Size
+*/ 
+
+%general-hamburger-span {
+    display: block;
+    height: $hamburger-line-height;
+    width: $hamburger-width;
+    transition: $sty-transition;
+}
+
+%hamburger-lines {
+    span {
+        background-color: transparent;
+
+        &::before,
+        &::after {
+            margin-top: 0;
+        }
+    }
+}
+
+.#{$sty-css-prefix}-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: $sty-height;
+}
+
+.#{$sty-css-prefix}-menu-left {
+    .#{$sty-css-prefix}-navigation,
+    .#{$sty-css-prefix}-header {
+        justify-content: flex-start;
+    }
+}
+
+.#{$sty-css-prefix}-menu-right {
+    .#{$sty-css-prefix}-hamburger {
+        margin-left: auto;
+    }
+}
+
+.#{$sty-css-prefix}-brand {
+    font-size: 1.6em;
+    padding: $sty-padding;
+}
+
+.#{$sty-css-prefix}-menu {
+    min-height: $sty-height;
+    transition: $sty-transition;
+    width: 100%;
+}
+
+.#{$sty-css-prefix}-navigation {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.#{$sty-css-prefix}-menu,
+.#{$sty-css-prefix}-item {
+    a {
+        text-decoration: none;
+        color: inherit;
+        cursor: pointer;
+    }
+}
+
+.#{$sty-css-prefix}-item {
+    height: $sty-height;
+
+    a {
+        padding: $sty-padding;
+        display: block;
+    }
+}
+
+.#{$sty-css-prefix}-hamburger {
+    padding: $sty-padding;
+    position: relative;
+    cursor: pointer;
+
+    span {
+        @extend %general-hamburger-span;
+
+        &::before,
+        &::after {
+            @extend %general-hamburger-span;
+            content: '';
+            position: absolute;
+        }
+
+        &::before {
+            margin-top: -8px;
+        }
+
+        &::after {
+            margin-top: 8px;
+        }
+    }
+}
+
+.#{$sty-css-prefix}-checkbox {
+    display: none;
+
+    &:not(:checked) ~.#{$sty-css-prefix}-menu {
+        overflow: hidden;
+        height: $sty-height;
+    }
+
+    &:checked ~.#{$sty-css-prefix}-menu {
+        transition: height $sty-transition;
+        height: 100vh;
+        overflow: auto;
+
+        li {
+            .#{$sty-css-prefix}-hamburger {
+                @extend %hamburger-lines;
+            }
+        }
+    }
+}
+
+.dropdown {
+    position: relative;
+    height: auto;
+    min-height: $sty-height;
+
+    &:hover > ul {
+        position: relative;
+        display: block;
+        min-width: 100%;
+    }
+
+    > a {
+        &::after {
+            $expand-arrow-height: 5px;
+
+            position: absolute;
+            content: '';
+            right: 10px;
+            top: $sty-height / 2 - $expand-arrow-height + 1px;
+            border-width: $expand-arrow-height $expand-arrow-height 0;
+            border-color: transparent;
+            border-style: solid;
+        }
+    }
+
+    > ul {
+        display: block;
+        overflow-x: hidden;
+        list-style: none;
+        padding: 0;
+
+        .#{$sty-css-prefix}-item {
+            min-width: 100%;
+            height: $sty-height / 2;
+            padding: 5px 10px 5px 40px;
+
+            a {
+                min-height: $sty-height / 2;
+                line-height: $sty-height / 2;
+                padding: 0;
+            }
+        }
+    }
+}
+
+/* 
+** For non-mobile size
+*/
+
+@media screen and (min-width: $sty-breakpoint) {
+    .#{$sty-css-prefix}-navigation {
+        flex-flow: row;
+        justify-content: flex-end;
+    }
+
+    .#{$sty-css-prefix}-hamburger {
+        display: none;
+    }
+
+    .#{$sty-css-prefix}-checkbox {
+        &:not(:checked) ~.#{$sty-css-prefix}-menu {
+            overflow: visible;
+        }
+
+        &:checked ~.#{$sty-css-prefix}-menu {
+          height: $sty-height;
+        }
+    }
+
+    .#{$sty-css-prefix}-menu {
+        .#{$sty-css-prefix}-item {
+            border-top: 0;
+        }
+
+    }
+
+    .#{$sty-css-prefix}-menu-right .#{$sty-css-prefix}-header {
+        margin-right: auto;
+    }
+
+    .dropdown {
+        height: $sty-height;
+
+        &:hover > ul {
+            position: absolute;
+            left: 0;
+            top: $sty-height;
+            padding: 0;
+        }
+
+        > ul {
+            display: none;
+
+            .#{$sty-css-prefix}-item {
+                padding: 5px 10px;
+
+                a {
+                    white-space: nowrap;
+                }
+            }
+        }
+    }
+}
+
+/*
+** Modes of Navigation ( Default - Static - Fixed - Fixed-bottom)
+*/
+
+.#{$sty-css-prefix}-default {
+    width: 100%;
+    position: relative;
+    box-shadow: $sty-shadow;
+    z-index: 1000;
+}
+
+.#{$sty-css-prefix}-static {
+    box-shadow: $sty-shadow;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+
+    .#{$sty-css-prefix}-checkbox {
+        &:checked ~.#{$sty-css-prefix}-menu {
+            position: absolute;
+        }
+    }
+}
+
+.#{$sty-css-prefix}-fixed {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: $sty-shadow;
+}
+
+.#{$sty-css-prefix}-fixed-bottom {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: $sty-shadow;
+}
+
+/* 
+** Themes 
+*/ 
+// ******* default dark *******
+.#{$sty-css-prefix}-menu-dark,
+.#{$sty-css-prefix}-menu-dark .dropdown ul {
+    background-color: $dark-bg;
+    color: $dark-fg;
+}
+
+.#{$sty-css-prefix}-menu-dark {
+    .active,
+    .#{$sty-css-prefix}-item:hover {
+        background-color: $dark-hl;
+    }
+
+    .#{$sty-css-prefix}-hamburger {
+        span,
+        span::before,
+        span::after {
+            background-color: $dark-fg;
+        }
+    }
+}
+
+// ******* default light *******
+.#{$sty-css-prefix}-menu-light,
+.#{$sty-css-prefix}-menu-light .dropdown ul {
+    background-color: $light-bg;
+    color: $light-fg;
+}
+
+.#{$sty-css-prefix}-menu-light {
+    .active,
+    .#{$sty-css-prefix}-item:hover {
+        background-color: $light-hl;
+    }
+
+    .#{$sty-css-prefix}-hamburger {
+        span,
+        span::before,
+        span::after {
+            background-color: $light-fg;
+        }
+    }
+}
+
+// ******* default material-red *******
+.#{$sty-css-prefix}-menu-material-red,
+.#{$sty-css-prefix}-menu-material-red .dropdown ul {
+    background-color: $material-red-bg;
+    color: $material-red-fg;
+}
+
+.#{$sty-css-prefix}-menu-material-red {
+    .active,
+    .#{$sty-css-prefix}-item:hover {
+        background-color: $material-red-hl;
+    }
+
+    .#{$sty-css-prefix}-hamburger {
+        span,
+        span::before,
+        span::after {
+            background-color: $material-red-fg;
+        }
+    }
+}
+
+// ******* default material-indigo *******
+.#{$sty-css-prefix}-menu-material-indigo,
+.#{$sty-css-prefix}-menu-material-indigo .dropdown ul {
+    background-color: $material-indigo-bg;
+    color: $material-indigo-fg;
+}
+
+.#{$sty-css-prefix}-menu-material-indigo {
+    .active,
+    .#{$sty-css-prefix}-item:hover {
+        background-color: $material-indigo-hl;
+    }
+
+    .#{$sty-css-prefix}-hamburger {
+        span,
+        span::before,
+        span::after {
+            background-color: $material-indigo-fg;
+        }
+    }
+}
+
+// ******* default material-green *******
+.#{$sty-css-prefix}-menu-material-green,
+.#{$sty-css-prefix}-menu-material-green .dropdown ul {
+    background-color: $material-green-bg;
+    color: $material-green-fg;
+}
+
+.#{$sty-css-prefix}-menu-material-green {
+    .active,
+    .#{$sty-css-prefix}-item:hover {
+        background-color: $material-green-hl;
+    }
+
+    .#{$sty-css-prefix}-hamburger {
+        span,
+        span::before,
+        span::after {
+            background-color: $material-green-fg;
+        }
+    }
+}
+
+// ******* default material-amber *******
+.#{$sty-css-prefix}-menu-material-amber,
+.#{$sty-css-prefix}-menu-material-amber .dropdown ul {
+    background-color: $material-amber-bg;
+    color: $material-amber-fg;
+}
+
+.#{$sty-css-prefix}-menu-material-amber {
+    .active,
+    .#{$sty-css-prefix}-item:hover {
+        background-color: $material-amber-hl;
+    }
+
+    .#{$sty-css-prefix}-hamburger {
+        span,
+        span::before,
+        span::after {
+            background-color: $material-amber-fg;
+        }
+    }
+}
+
+// ******* default material-brown *******
+.#{$sty-css-prefix}-menu-material-brown,
+.#{$sty-css-prefix}-menu-material-brown .dropdown ul {
+    background-color: $material-brown-bg;
+    color: $material-brown-fg;
+}
+
+.#{$sty-css-prefix}-menu-material-brown {
+    .active,
+    .#{$sty-css-prefix}-item:hover {
+        background-color: $material-brown-hl;
+    }
+
+    .#{$sty-css-prefix}-hamburger {
+        span,
+        span::before,
+        span::after {
+            background-color: $material-brown-fg;
+        }
+    }
+}
+
+// ******* default material-bluegrey *******
+.#{$sty-css-prefix}-menu-material-bluegrey,
+.#{$sty-css-prefix}-menu-material-bluegrey .dropdown ul {
+    background-color: $material-bluegrey-bg;
+    color: $material-bluegrey-fg;
+}
+
+.#{$sty-css-prefix}-menu-material-bluegrey {
+    .active,
+    .#{$sty-css-prefix}-item:hover {
+        background-color: $material-bluegrey-hl;
+    }
+
+    .#{$sty-css-prefix}-hamburger {
+        span,
+        span::before,
+        span::after {
+            background-color: $material-bluegrey-fg;
+        }
+    }
+}
+
+// ******* default material-cyan *******
+.#{$sty-css-prefix}-menu-material-cyan,
+.#{$sty-css-prefix}-menu-material-cyan .dropdown ul {
+    background-color: $material-cyan-bg;
+    color: $material-cyan-fg;
+}
+
+.#{$sty-css-prefix}-menu-material-cyan {
+    .active,
+    .#{$sty-css-prefix}-item:hover {
+        background-color: $material-cyan-hl;
+    }
+
+    .#{$sty-css-prefix}-hamburger {
+        span,
+        span::before,
+        span::after {
+            background-color: $material-cyan-fg;
+        }
+    }
+}
+
+/* 
+** Humburger Animation 
+*/ 
+.#{$sty-css-prefix}-checkbox {
+    &:checked {
+        + .#{$sty-css-prefix}-menu {
+            .#{$sty-css-prefix}-hamburger-doublespin {
+                span {
+                    &::before {
+                        transform: rotate(225deg);
+                    }
+
+                    &::after {
+                        transform: rotate(-225deg);
+                    }
+                }
+            }
+
+            .#{$sty-css-prefix}-hamburger-spin {
+                span {
+                    &::before {
+                        transform: rotate(45deg);
+                    }
+
+                    &::after {
+                        transform: rotate(-45deg);
+                    }
+                }
+            }
+        }
+    }
+}

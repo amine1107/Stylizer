@@ -1,0 +1,104 @@
+// ---------------------------------------------------------------
+// This file contains all styles related to the table component.
+// ---------------------------------------------------------------
+
+table {
+  max-width: 100%;
+  background-color: transparent;
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-family: arial;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.74);
+  -webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.74);
+  -moz-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.74);
+}
+
+.table {
+  border-bottom: #d0d5d8 solid 1px;
+  width: 100%;
+  margin-bottom: 20px;
+  th {
+    border-right: #d0d5d8 solid 1px;
+    padding: 20px 30px;
+    line-height: 20px;
+    text-align: left;
+    vertical-align: middle;
+  }
+  td {
+    border-right: #d0d5d8 solid 1px;
+    padding: 20px 30px;
+    line-height: 20px;
+    text-align: left;
+    vertical-align: middle;
+    &:last-child {
+      border-right: 0;
+    }
+  }
+  tbody td {
+    font-size: 16px;
+    text-align: center;
+  }
+  thead th {
+    font-weight: normal;
+    background-color: #6c5ce7;
+    color: #fff;
+    font-size: 19px;
+    text-align: center;
+  }
+  tbody > tr:nth-child(odd) > {
+    td, th {
+      background-color: #f8f8f8;
+    }
+  }
+}
+
+/* Making the table responsive */
+
+/* for resolution up to 767px */
+@media (max-width: 767px) {
+  /* Tabela responsiva */
+  .table-responsive {
+    display: block;
+    position: relative;
+    width: 100%;
+    thead, tbody, th, td, tr {
+      display: block;
+    }
+    td, th {
+      height: 35px;
+    }
+  }
+  /*  Table working as a block  */
+  /* Set a size for the cells */
+  .table {
+    thead th {
+      font-size: 16px;
+    }
+    th, td {
+      font-size: 12px;
+      padding: 8px;
+    }
+  }
+  /* thead is "floated" left to aid in responsiveness */
+  .table-responsive {
+    thead {
+      float: left;
+    }
+    tbody {
+      width: auto;
+      position: relative;
+      overflow-x: auto;
+      /* scroll horizontal */
+      -webkit-overflow-scrolling: touch;
+      /* Operation for touch devices */
+      white-space: nowrap;
+      tr {
+        display: inline-block;
+      }
+    }
+  }
+  /*  Positioning side-by-side lines  */
+  .table td:last-child {
+    border-right: #d0d5d8 solid 1px;
+  }
+}

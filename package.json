@@ -1,27 +1,27 @@
 {
-  "name": "lighter.css",
+  "name": "stylizer",
   "author": {
     "name": "Aouane Amine"
   },
   "bugs": {
-    "url": "https://github.com/amine1107/lighter/issues"
+    "url": "https://github.com/amine1107/stylizer/issues"
   },
   "bundleDependencies": false,
   "deprecated": false,
   "description": "flexible Css micro framework based on the visual aspect, the framework offers you a clean and easy work.",
-  "homepage": "https://github.com/amine1107/lighter#readme",
+  "homepage": "https://github.com/amine1107/stylizer#readme",
   "keywords": [
     "\"css\"\"framework\""
   ],
   "license": "MIT",
-  "main": "build/lighter.css",
+  "main": "build/stylizer.css",
 
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/amine1107/lighter.git"
+    "url": "git+https://github.com/amine1107/stylizer.git"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "version": "2.0.0"
+  "version": "3.0.0"
 }

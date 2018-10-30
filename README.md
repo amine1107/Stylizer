@@ -1,14 +1,14 @@
 <div  align="center">
-<img src ="https://amine1107.github.io/lighter/assets/img/logos.png" />
+<img src ="https://amine1107.github.io/Stylizer/assets/img/logos.png" />
   
   
-# Lighter V2.1
-Lighter is a flexible Css micro framework,Based on the visual aspect, the framework offers you a clean and easy work
+# Stylizer V3.0
+Stylizer is a flexible Css framework,Based on the visual aspect, the framework offers you a clean and easy work
 
-[![GitHub issues](https://img.shields.io/github/issues/amine1107/lighter.svg)](https://github.com/amine1107/lightx/issues)
-[![GitHub forks](https://img.shields.io/github/forks/amine1107/lighter.svg?style=flat-square)](https://github.com/amine1107/lightx/network)
-[![GitHub stars](https://img.shields.io/github/stars/amine1107/lighter.svg?style=flat-square)](https://github.com/amine1107/lighter/stargazers)
-[![GitHub license](https://img.shields.io/github/license/amine1107/lighter.svg?style=flat-square)](https://github.com/amine1107/lighter/blob/master/LICENSE)
+[![GitHub issues](https://img.shields.io/github/issues/amine1107/Stylizer.svg)](https://github.com/amine1107/lightx/issues)
+[![GitHub forks](https://img.shields.io/github/forks/amine1107/Stylizer.svg?style=flat-square)](https://github.com/amine1107/lightx/network)
+[![GitHub stars](https://img.shields.io/github/stars/amine1107/Stylizer.svg?style=flat-square)](https://github.com/amine1107/Stylizer/stargazers)
+[![GitHub license](https://img.shields.io/github/license/amine1107/Stylizer.svg?style=flat-square)](https://github.com/amine1107/Stylizer/blob/master/LICENSE)
 </div>
 
 
@@ -16,20 +16,20 @@ Lighter is a flexible Css micro framework,Based on the visual aspect, the framew
 ## Getting Started 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 ### Download the minified file
-the installation of Lighter is very simple, you can get a copy by downloading the minified file 
-* [Download](https://gitcdn.xyz/cdn/amine1107/lighter/fa41b0c9fc0bfd7c3ac9083ba402cc724926136a/lighter.min.css)
+the installation of Stylizer is very simple, you can get a copy by downloading the minified file 
+* [Download](https://gitcdn.xyz/cdn/amine1107/Stylizer/fa41b0c9fc0bfd7c3ac9083ba402cc724926136a/Stylizer.min.css)
 ### Using CDN
 ```html
-<link rel="stylesheet" type="text/css" media="screen" href="https://gitcdn.xyz/repo/amine1107/lighter/master/lighter.min.css" />          
+<link rel="stylesheet" type="text/css" media="screen" href="https://gitcdn.xyz/repo/amine1107/Stylizer/master/Stylizer.min.css" />          
 ```
 ### Using Git
 You can also clone the project using Git
 ```git
-$ git clone https://github.com/amine1107/lighter.git
+$ git clone https://github.com/amine1107/Stylizer.git
 ```
 ### Using Npm
 ```npm
-$ npm i lighter.css
+$ npm i Stylizer
 ```
 ## Running the tests
 You can simply add Lightx to your file Html
@@ -43,7 +43,7 @@ You can simply add Lightx to your file Html
   <title>Your Title | Make some awesome stuff</title>
   <link rel="icon" href="../favicon.ico">
   <!-- Add the Path where is your file --> 
-  <link rel="stylesheet" type="text/css" media="screen" href="../path/lighter.min.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="../path/Stylizer.min.css" />
 </head>
 <body>
   <!-- Your Content -->
@@ -53,20 +53,20 @@ You can simply add Lightx to your file Html
 </body>
 </html>  
 ```
-## Example
+## Exemple
 ### Grids
-Lighter contain 12 responsive grids 
+Stylizer contain 12 responsive grids 
 ```html 
 <div class="container">
   <div class="row">
-     <div class="col-6>
+     <div class="col-md-6>
        <h1>Hello World</h1>
      </div>
   </div>
 </div>
 ```
 For more Informations visit : 
-* [Lighter Website](https://amine1107.github.io/lighter/)
+* [Stylizer Website](https://amine1107.github.io/Stylizer/)
 
 # Contributing
 
