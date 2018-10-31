@@ -9,10 +9,7 @@
  .tabs {
   display: flex;
   flex-wrap: wrap;
-
-  -webkit-box-shadow: 0px 3px 12px 0px rgba(0,0,0,0.75);
-  -moz-box-shadow: 0px 3px 12px 0px rgba(0,0,0,0.75);
-  box-shadow: 0px 3px 12px 0px rgba(0,0,0,0.75);
+  margin-top: 10px;
   // make sure it wraps
   label {
     order: 1;
@@ -23,6 +20,7 @@
     cursor: pointer;
     background: #dfe6e9;
     transition: background ease 0.5s;
+    font-size: 20px;
   }
   .tab {
     order: 99;

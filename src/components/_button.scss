@@ -44,8 +44,8 @@ $btn_brown: #795548;
   Raised Buttons
 ------------------------------------------------------------------------- */
 button,
-input,
-.btn {
+input.btn,
+.btn  {
   display: inline-block;
   position: relative;
   cursor: pointer;
@@ -73,12 +73,10 @@ input,
   &.btn-block { width: 100%;}
 }
 
-button,
-input,
-a:link, a:visited.btn  {
+a.btn:visited {
   text-decoration: none;
-  display: inline-block;
 }
+
 
 /* ----------------------------------------------------------------------
   Grouped Buttons 

@@ -6,117 +6,54 @@
 ** Global form variables 
 */
 
-input {
-  &[type="email"], &[type="number"], &[type="search"], &[type="text"], &[type="tel"], &[type="url"], &[type="password"] {
-    height: 38px;
-    padding: 6px 10px;
-    /* The 6px vertically centers text on FF, ignored by Webkit */
-    background-color: #fff;
-    border: 1px solid #D1D1D1;
-    border-radius: 4px;
-    box-shadow: none;
-    box-sizing: border-box;
+input[type=text], select, textarea {
     width: 100%;
-    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.75) inset;
-    -webkit-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.75) inset;
-    -moz-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.75) inset;
-  }
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
 }
 
-textarea, select {
-  height: 38px;
-  padding: 6px 10px;
-  /* The 6px vertically centers text on FF, ignored by Webkit */
-  background-color: #fff;
-  border: 1px solid #D1D1D1;
-  border-radius: 4px;
-  box-shadow: none;
-  box-sizing: border-box;
-  width: 100%;
-  box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.75) inset;
-  -webkit-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.75) inset;
-  -moz-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.75) inset;
+input.border-round {
+  border-radius: 8px;
 }
 
-/* Removes awkward default styles on some inputs for iOS */
-
-input {
-  &[type="email"], &[type="number"], &[type="search"], &[type="text"], &[type="tel"], &[type="url"], &[type="password"] {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-  }
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
 }
 
-textarea {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  min-height: 65px;
-  padding-top: 6px;
-  padding-bottom: 6px;
+.form-container {
+    border-radius: 5px;
+    padding: 20px;
 }
 
-input {
-  &[type="email"]:focus, &[type="number"]:focus, &[type="search"]:focus, &[type="text"]:focus, &[type="tel"]:focus, &[type="url"]:focus, &[type="password"]:focus {
-    border: 1px solid rgb(55, 21, 177);
-    outline: 0;
-  }
+.form-col-25 {
+    float: left;
+    width: 12%;
+    margin-top: 6px;
 }
 
-textarea:focus, select:focus {
-  border: 1px solid rgb(55, 21, 177);
-  outline: 0;
+.form-col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
 }
 
-label, legend {
-  display: block;
-  margin-bottom: .5rem;
-  font-weight: 500;
+/* Clear floats after the columns */
+.form-row:after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
-fieldset {
-  padding: 0;
-  border-width: 0;
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .form-col-25, .form-col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
 }
 
-form div input[type="checkbox"], input[type="radio"] {
-  display: inline;
-}
 
-label > .label-body {
-  display: inline-block;
-  margin-left: .5rem;
-  font-weight: normal;
-}
 
-form button {
-  align-items: left;
-}
-
-input {
-  &[type="submit"] {
-    align-items: left;
-  }
-  box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.75) inset;
-  -webkit-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.75) inset;
-  -moz-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.75) inset;
-  + label {
-    margin-top: 2px;
-  }
-  &.input-round {
-    border: 0;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -ms-border-radius: 20px;
-    border-radius: 20px;
-  }
-}
-
-select.select-round {
-  border: 0;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  border-radius: 20px 0 0 20px;
-}

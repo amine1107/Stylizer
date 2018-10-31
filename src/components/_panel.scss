@@ -2,8 +2,9 @@
 // This file contains all styles related to the Panel component.
 // ---------------------------------------------------------------
 .panel {
-	width: 100%;
+	max-width: 100%;
 	padding: 10px;
+	margin: 5px;
 	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.7);
 -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.7);
 -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.7);
