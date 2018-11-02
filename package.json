@@ -1,27 +1,22 @@
 {
-  "name": "stylizer",
-  "author": {
-    "name": "Aouane Amine"
+  "name": "stylizercss",
+  "version": "3.0.0",
+  "description": "CSS framework Based on the visual aspect",
+  "main": "index.js",
+  "scripts": {
+    "test" : "echo \"Error: no test specified\" && exit 1"
   },
-  "bugs": {
-    "url": "https://github.com/amine1107/stylizer/issues"
-  },
-  "bundleDependencies": false,
-  "deprecated": false,
-  "description": "flexible Css micro framework based on the visual aspect, the framework offers you a clean and easy work.",
-  "homepage": "https://github.com/amine1107/stylizer#readme",
-  "keywords": [
-    "\"css\"\"framework\""
-  ],
-  "license": "MIT",
-  "main": "build/stylizer.css",
-
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/amine1107/stylizer.git"
+    "url": "git+https://github.com/amine1107/Stylizer.git"
   },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "keywords": [
+    "<css><framework><design><grids>"
+  ],
+  "author": "amineaouane1992 <amineaouane1992@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/amine1107/Stylizer/issues"
   },
-  "version": "3.0.0"
+  "homepage": "https://github.com/amine1107/Stylizer#readme"
 }

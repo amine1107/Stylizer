@@ -1,5 +1,5 @@
 <div  align="center">
-<img src ="https://amine1107.github.io/getstylizer/img/show.png" />
+<img src ="https://amine1107.github.io/Stylizer/assets/img/logos.png" />
   
   
 # Stylizer V3.0
@@ -20,7 +20,7 @@ the installation of Stylizer is very simple, you can get a copy by downloading t
 * [Download](https://gitcdn.xyz/cdn/amine1107/Stylizer/fa41b0c9fc0bfd7c3ac9083ba402cc724926136a/Stylizer.min.css)
 ### Using CDN
 ```html
-<link rel="stylesheet" type="text/css" media="screen" href="https://gitcdn.xyz/repo/amine1107/Stylizer/master/stylizer.min.css" />          
+<link rel="stylesheet" type="text/css" media="screen" href="https://gitcdn.xyz/repo/amine1107/Stylizer/master/Stylizer.min.css" />          
 ```
 ### Using Git
 You can also clone the project using Git
@@ -29,7 +29,7 @@ $ git clone https://github.com/amine1107/Stylizer.git
 ```
 ### Using Npm
 ```npm
-$ npm i stylizercss
+$ npm i Stylizer
 ```
 ## Running the tests
 You can simply add Lightx to your file Html
