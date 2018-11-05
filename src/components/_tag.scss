@@ -1,5 +1,5 @@
 // ---------------------------------------------------------------
-// This file contains all styles related to the Tags component.
+// This file contains all styles related to the tags component.
 // ---------------------------------------------------------------
 
 .tags {
@@ -9,11 +9,11 @@
   padding: 0;
 }
 
-.tags li {
+.tagmes li {
   float: left; 
 }
 
-.tag {
+.tagme {
   background: #eee;
   border-radius: 3px 0 0 3px;
   color: #999;
@@ -27,7 +27,7 @@
   -webkit-transition: color 0.2s;
 }
 
-.tag::before {
+.tagme::before {
   background: #fff;
   border-radius: 10px;
   box-shadow: inset 0 1px rgba(0, 0, 0, 0.25);
@@ -39,7 +39,7 @@
   top: 10px;
 }
 
-.tag::after {
+.tagme::after {
   background: #fff;
   border-bottom: 13px solid transparent;
   border-left: 10px solid #eee;
@@ -50,11 +50,11 @@
   top: 0;
 }
 
-.tag.tag-hover:hover {
+.tagme.tagme-hover:hover {
   background-color: #b2bec3;
   color: white;
 }
 
-.tag.tag-hover:hover::after {
+.tagme.tagme-hover:hover::after {
    border-left-color: #b2bec3; 
 }

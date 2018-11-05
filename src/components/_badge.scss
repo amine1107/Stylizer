@@ -2,64 +2,38 @@
 // This file contains all styles related to the Badge component.
 // ---------------------------------------------------------------
 
-$badge-text-color: #ffffff;
-$badge-default-bg: #2c3e50;
-$badge-info-bg: #3498db;
-$badge-warning-bg: #f1c40f;
-$badge-danger-bg: #e74c3c;
-$badge-success-bg: #2ecc71;
-
-// Basiz setup
 .badge {
-    box-sizing: border-box;
+  position: relative;
+  white-space: nowrap;
+  &[data-badge]::after, &:not([data-badge])::after {
+    background: #c23616;
+    background-clip: padding-box;
+    border-radius: .5rem;
+    box-shadow: 0 0 0 .1rem #fff;
+    color: #fff;
+    content: attr(data-badge);
     display: inline-block;
-    background-color: $badge-default-bg;
-    color: $badge-text-color;
-    
-    border-radius: 3rem; // As longe as this is bigger than the fontsize
-    text-align: center;
-
-    font-size: 1.6rem;
-    font-weight: 400;
-    padding: .05rem .8rem .1rem;
-    line-height: inherit;
-    box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.74);
--webkit-box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.74);
--moz-box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.74);
-}
-
-// Style
-.badge-line {
-    background-color: transparent;
-    color: #95a5a6;
-    box-shadow: 0 0 0 1px #95a5a6;
-}
-
-.badge-info {
-    background-color: $badge-info-bg;
-}
-
-.badge-warning {
-    background-color: $badge-warning-bg;
-}
-
-.badge-danger {
-    background-color: $badge-danger-bg;
-}
-
-.badge-success {
-    background-color: $badge-success-bg;
-}
-
-// Sizes
-.badge-small {
-    font-size: 1.2rem;
-    padding: .1rem .65rem .2rem;
-}
-
-.badge-smaller {
+    transform: translate(-0.05rem, -0.5rem);
+  }
+  &[data-badge]::after {
     font-size: .7rem;
-    padding: .05rem .4rem .15rem;
+    height: .9rem;
+    line-height: 1;
+    min-width: .9rem;
+    padding: .1rem .2rem;
+    text-align: center;
+    white-space: nowrap;
+  }
+  &:not([data-badge])::after, &[data-badge=""]::after {
+    height: 6px;
+    min-width: 6px;
+    padding: 0;
+    width: 6px;
+  }
+  &.btn::after {
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translate(50%, -50%);
+  }
 }
-
-

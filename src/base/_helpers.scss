@@ -5,6 +5,7 @@
 /**
  * Clear inner floats
  */
+
 .clearfix::after {
   clear: both;
   content: '';
@@ -16,9 +17,11 @@
  * 1. Needed in WebKit-based browsers because of an implementation bug;
  *    See: https://code.google.com/p/chromium/issues/detail?id=457146
  */
+
 .hide-text {
   overflow: hidden;
-  padding: 0; /* 1 */
+  padding: 0;
+  /* 1 */
   text-indent: 101%;
   white-space: nowrap;
 }
@@ -28,6 +31,7 @@
  * Shamelessly borrowed from HTML5Boilerplate:
  * https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css#L119-L133
  */
+
 .visually-hidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -40,22 +44,29 @@
 }
 
 .full-width {
-    width: 100%;
-    box-sizing: border-box; }
-  .max-full-width {
-    max-width: 100%;
-    box-sizing: border-box; }
-  .float-right {
-    float: right; }
-  .float-left {
-    float: left; }
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.max-full-width {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.float-right {
+  float: right;
+}
+
+.float-left {
+  float: left;
+}
 
 .text-center {
   text-align: center;
-}    
+}
 
 .text-right {
-   text-align: right;
+  text-align: right;
 }
 
 .text-left {
@@ -103,4 +114,12 @@
 
 .text-underline {
   text-decoration: underline;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.text-italic {
+  font-style: italic;
 }

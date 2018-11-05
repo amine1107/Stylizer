@@ -1,0 +1,136 @@
+// ---------------------------------------------------------------
+// This file contains all styles related to the Tooltip component.
+// ---------------------------------------------------------------
+
+[data-tooltip] {
+  cursor: pointer;
+  position: relative;
+  &:before, &:after {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.15s cubic-bezier(0.5, 1, 0.25, 1);
+    z-index: 1;
+  }
+  &:before {
+    padding: 5px;
+    width: 110px;
+    border-radius: 3px;
+    background: #000;
+    color: #fff;
+    content: attr(data-tooltip);
+    text-align: center;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.2;
+  }
+  &:after {
+    border: 8px solid transparent;
+    width: 0;
+    content: "";
+    font-size: 0;
+    line-height: 0;
+  }
+  &:hover {
+    &:before, &:after {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+  &.t-xl:before {
+    width: 200px;
+  }
+  &.t-lg:before {
+    width: 170px;
+  }
+  &.t-md:before {
+    width: 140px;
+  }
+  &.t-sm:before {
+    width: 110px;
+  }
+  &.t-xs:before {
+    width: 80px;
+  }
+  &.t-top {
+    &:before {
+      bottom: 100%;
+      left: 50%;
+      margin-bottom: 5px;
+      transform: translateX(-50%);
+    }
+    &:after {
+      bottom: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      border-top: 8px solid #000;
+      border-bottom: none;
+    }
+    &:hover {
+      &:before, &:after {
+        transform: translateX(-50%) translateY(-5px);
+      }
+    }
+  }
+  &.t-right {
+    &:before {
+      top: 50%;
+      left: 100%;
+      margin-left: 5px;
+      transform: translateY(-50%);
+    }
+    &:after {
+      top: 50%;
+      left: 100%;
+      transform: translateY(-50%);
+      border-right: 8px solid #000;
+      border-left: none;
+    }
+    &:hover {
+      &:before, &:after {
+        transform: translateX(5px) translateY(-50%);
+      }
+    }
+  }
+  &.t-bottom {
+    &:before {
+      top: 100%;
+      left: 50%;
+      margin-top: 5px;
+      transform: translateX(-50%);
+    }
+    &:after {
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      border-bottom: 8px solid #000;
+      border-top: none;
+    }
+    &:hover {
+      &:before, &:after {
+        transform: translateX(-50%) translateY(5px);
+      }
+    }
+  }
+  &.t-left {
+    &:before {
+      top: 50%;
+      right: 100%;
+      margin-right: 5px;
+      transform: translateY(-50%);
+    }
+    &:after {
+      top: 50%;
+      right: 100%;
+      transform: translateY(-50%);
+      border-left: 8px solid #000;
+      border-right: none;
+    }
+    &:hover {
+      &:before, &:after {
+        transform: translateX(-5px) translateY(-50%);
+      }
+    }
+  }
+}

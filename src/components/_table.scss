@@ -8,9 +8,7 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
   font-family: arial;
-  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.74);
-  -webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.74);
-  -moz-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.74);
+  
 }
 
 .table {
@@ -40,8 +38,8 @@ table {
   }
   thead th {
     font-weight: normal;
-    background-color: #6c5ce7;
-    color: #fff;
+    background-color: #ecf0f1;
+    color: #333333;
     font-size: 19px;
     text-align: center;
   }

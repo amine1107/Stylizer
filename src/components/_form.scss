@@ -2,16 +2,12 @@
 // This file contains all styles related to the form component.
 // ---------------------------------------------------------------
 
-/* 
-** Global form variables 
-*/
-
 input[type=text], select, textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    resize: vertical;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
 }
 
 input.border-round {
@@ -19,41 +15,39 @@ input.border-round {
 }
 
 label {
-    padding: 12px 12px 12px 0;
-    display: inline-block;
+  padding: 12px 12px 12px 0;
+  display: inline-block;
 }
 
 .form-container {
-    border-radius: 5px;
-    padding: 20px;
+  border-radius: 5px;
+  padding: 20px;
 }
 
 .form-col-25 {
-    float: left;
-    width: 12%;
-    margin-top: 6px;
+  float: left;
+  width: 12%;
+  margin-top: 6px;
 }
 
 .form-col-75 {
-    float: left;
-    width: 75%;
-    margin-top: 6px;
+  float: left;
+  width: 75%;
+  margin-top: 6px;
 }
 
 /* Clear floats after the columns */
+
 .form-row:after {
-    content: "";
-    display: table;
-    clear: both;
+  content: "";
+  display: table;
+  clear: both;
 }
 
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
-    .form-col-25, .form-col-75, input[type=submit] {
-        width: 100%;
-        margin-top: 0;
-    }
+  .form-col-25, .form-col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
 }
-
-
-

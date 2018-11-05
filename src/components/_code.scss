@@ -2,36 +2,34 @@
 // This file contains all styles related to the code component.
 // ---------------------------------------------------------------
 
-pre {
-  box-sizing: border-box;
-  width: 100%;
-  margin: 5px;
-  overflow: auto;
-  overflow-y: hidden;
-  font-size: 12px;
-  line-height: 20px;
-  background: #efefef;
-  border: 1px solid #777;
-  background: url(lines.png) repeat 0 0;
-  padding: 3px;
-  color: #333;
-  box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.75) inset;
-  -webkit-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.75) inset;
-  -moz-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.75) inset;
-  code {
-    padding: 5px;
-    color: #333;
-  }
+code {
+  background: #fcf2f2;
+  border-radius: .1rem;
+  color: #d73e48;
+  font-size: 85%;
+  line-height: 1.2;
+  padding: .1rem .2rem;
 }
 
-@media print {
-  pre {
+.code {
+  border-radius: .1rem;
+  color: #3b4351;
+  position: relative;
+  &::before {
+    color: #bcc3ce;
+    content: attr(data-lang);
+    font-size: .7rem;
+    position: absolute;
+    right: .4rem;
+    top: .1rem;
+  }
+  code {
+    background: #f7f8f9;
+    color: inherit;
+    display: block;
+    line-height: 1.5;
     overflow-x: auto;
-    white-space: pre-wrap;
-    white-space: -moz-pre-wrap !important;
-    white-space: -pre-wrap;
-    white-space: -o-pre-wrap;
-    word-wrap: break-word;
-    background: #fff;
+    padding: 1rem;
+    width: 100%;
   }
 }

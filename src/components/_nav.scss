@@ -1,0 +1,32 @@
+// -----------------------------------------------------------------------------
+// This file contains CSS Nav classes.
+// -----------------------------------------------------------------------------
+.nav {
+  display: flex;
+  display: -ms-flexbox;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  list-style: none;
+  margin: .2rem 0;
+  .nav-item {
+    a {
+      color: #66758c;
+      padding: .2rem .4rem;
+      text-decoration: none;
+      &:focus, &:hover {
+        color: #5755d9;
+      }
+    }
+    &.active > a {
+      color: #505c6e;
+      font-weight: bold;
+      &:focus, &:hover {
+        color: #5755d9;
+      }
+    }
+  }
+  .nav {
+    margin-bottom: .4rem;
+    margin-left: .8rem;
+  }
+}
