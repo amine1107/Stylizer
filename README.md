@@ -1,5 +1,5 @@
 <div  align="center">
-<img src ="https://amine1107.github.io/Stylizer/assets/img/logos.png" />
+<img src ="https://amine1107.github.io/getstylizer/img/show.png" />
   
   
 # Stylizer V3.0
